@@ -1,0 +1,1247 @@
+<html lang="PT-pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <style>
+
+    </style>
+    <title>Portfolio</title>
+
+</head>
+
+<body class="font-nunito scroll-smooth over overflow-hidden">
+    <!-- preload  -->
+    <div id="preloader" class="fixed z-[200]  h-screen w-screen  flex justify-center  items-center bg-[#EC4747]">
+
+        <img id="img-dev" class="h-14" src="img/dev.png" alt="">
+    </div>
+
+    <!-- button scrool top  -->
+    <button id="btn-top" class="w-8 h-8 rounded-full m-5 fixed bottom-0 right-0 bg-red-500 z-[600]"><i
+            class="bi-arrow-up text-white"></i></button>
+    <!-- into section -->
+    <div id="home" class="w-screen h-screen relative overflow-hidden bg-[#1616169c]">
+        <!-- Background Video -->
+        <!-- <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover -z-10">
+            <source data="img/High tech digital world background 4k.mp4" type="video/mp4" controller="autoplay ">
+            Seu navegador não suporta o elemento de vídeo.
+        </video> -->
+
+        <video autoplay muted loop  class="absolute top-0 left-0 w-full h-full object-cover -z-10" data="img/High tech digital world background 4k.mp4" controller="autoplay "></video>
+
+
+
+
+
+
+        <!-- navbar -->
+        <nav class="section w-full fixed top-0 bg-white z-10 dark:bg-slate-900 ">
+            <div class="container mx-auto py-5 px-3 md:px-3 flex items-center justify-between ">
+                <a class="flex items-center gap-2" href="#home">
+                    <img class="w-8" data="./img/dev.png" alt="" />
+                    <p class="font-bold text-3xl text-[#EC4747]">ALD</p>
+                </a>
+
+                <ul class="hidden md:flex space-x-10 text-gray-600 dark:text-gray-100 font-bold text-sm uppercase">
+                    <li class="">
+                        <a href="#home" class="nav-link hover:text-[#EC4747] focus:text-lime-500">Início</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="nav-link hover:text-[#EC4747] focus:text-lime-500">Sobre mim</a>
+                    </li>
+                    <li>
+                        <a href="#services" class="nav-link hover:text-[#EC4747] focus:text-lime-500">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="#works" class="nav-link hover:text-[#EC4747] focus:text-lime-500">Trabalhos</a>
+                    </li>
+                    <li>
+                        <a href="#plans" class="nav-link hover:text-[#EC4747] focus:text-lime-500">Planos</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav-link hover:text-[#EC4747] focus:text-lime-500">Contacto</a>
+                    </li>
+                </ul>
+
+                <button>
+                    <i id="controller_theme" class="bi-lightbulb-fill"></i>
+                </button>
+
+                <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                </div>
+
+                <ul id="menu"
+                    class="hidden bg-red absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center bg-red-500">
+                    <li>
+                        <a id="hLink" href="#home">Inicio</a>
+                    </li>
+                    <li>
+                        <a id="hLink" href="#about">Sobre mim</a>
+                    </li>
+                    <li>
+                        <a id="hLink" href="#services">Serviços</a>
+                    </li>
+                    <li>
+                        <a id="hLink" href="#works">Trabalhos</a>
+                    </li>
+                    <li>
+                        <a id="hLink" href="#plans">Planos</a>
+                    </li>
+                    <li>
+                        <a id="hLink" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- intro content -->
+        <!-- image -->
+        <img id="person" class="absolute bottom-0 right-0 lg:left-0 mx-auto h-5/6 object-cover" src="./img/man.png"
+            alt="" />
+        <!-- circle -->
+        <div id="bg-person"
+            class="hidden lg:block absolute -bottom-1/4 right-0 left-0 mx-auto w-big h-big bg-[#F22E62] rounded-full -z-10">
+        </div>
+        <!-- animated text -->
+        <div
+            class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-2 md:text-6xl lg:left-5 xl:left-48 xl:text-7xl font-bold">
+            <span class="text-white">Freelancer</span>
+            <p id="text" class="text-red-500"></p>
+        </div>
+        <!-- texts -->
+        <div
+            class="hidden lg:flex flex-col gap-5 rounded-md shadow-lg absolute top-0 bottom-0 m-auto right-10 bg-white dark:bg-slate-900 dark:shadow-slate-800 p-6 h-fit w-1/3">
+            <h1 class="text-4xl font-bold text-[#EC4747]">Olá, eu sou o Adriano</h1>
+            <p class="text-gray-400">
+                Sou um jovem multifacetado com design e desenvolvimento web, Atualmente estou me aprofundando na
+                programação mobile para expandir minhas habilidades.
+            </p>
+            <p class="text-gray-400">Além de atuar como designer gráfico e web, sou também social media, criando
+                estratégias de conteúdo impactantes. Como DJ, trago uma visão criativa e dinâmica para todos os meus
+                projetos.</p>
+            <p class="text-gray-400"> Estou sempre em busca de novas oportunidades para crescer e colaborar em
+                iniciativas inovadoras.</p>
+            <a id="btn-contacte" class="bg-[#F22248] text-white text-xl px-3 py-2 rounded-md font-semibold w-fit"
+                href="#contact">Contrate-me</a>
+        </div>
+    </div>
+
+    <!-- about -->
+    <div id="about" class="section px-3 md:px-3 py-20 bg-gray-50 dark:bg-slate-900">
+        <div class="container mx-auto flex flex-col-reverse lg:flex-row items-center gap-20">
+            <!-- Left Side -->
+            <div class="relative w-full lg:w-1/2  flex justify-center">
+
+                <div class="w-full h-full  md:w-[500] md:h-[500] rounded-full overflow-hidden shadow-lg transition-transform duration-300 transform hover:scale-105 bg-gray-200 dark:bg-gray-700 shadow-[#F20530] cursor-pointer"
+                    onclick="openModal(this)">
+                    <img data="./img/portrait.png" alt="Minha Foto" class="object-cover h-full w-full transition-all" />
+                </div>
+            </div>
+            <!-- Right Side -->
+            <div class="my-auto flex flex-col gap-5 lg:w-1/2">
+                <h1 class="text-[#F20530] font-bold ">SOBRE MIM</h1>
+                <h2 class="text-3xl font-medium dark:text-white">Minhas Experiências</h2>
+                <p class="text-gray-600 dark:text-gray-300">
+                    Ao longo de 4 anos de experiência, ganhei sabedoria e habilidades em diversas áreas do design e
+                    desenvolvimento web. Trabalhei com uma ampla gama de tecnologias e ferramentas que me permitiram
+                    criar soluções eficazes e criativas. Aqui estão algumas das minhas principais competências:
+                </p>
+                <div class="flex flex-col gap-4">
+                    <!-- Skill Bars -->
+                    <div class="flex flex-col">
+                        <div class="skill">
+                            <h2 class="text-gray-400 font-medium">HTML</h2>
+                            <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                                <div class="bg-[#F22248] h-1.5 rounded-md" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <h2 class="text-gray-400 font-medium">CSS</h2>
+                            <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                                <div class="bg-[#F22248] h-1.5 rounded-md" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <h2 class="text-gray-400 font-medium">Bootstrap</h2>
+                            <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                                <div class="bg-[#F22248] h-1.5 rounded-md" style="width: 83%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <h2 class="text-gray-400 font-medium">UI/UX</h2>
+                            <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                                <div class="bg-[#F22248] h-1.5 rounded-md" style="width: 40%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <h2 class="text-gray-400 font-medium">JavaScript</h2>
+                            <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                                <div class="bg-[#F22248] h-1.5 rounded-md" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <h2 class="text-gray-400 font-medium">Ajax</h2>
+                            <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                                <div class="bg-[#F22248] h-1.5 rounded-md" style="width: 33%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <h2 class="text-gray-400 font-medium">PHP</h2>
+                            <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                                <div class="bg-[#F22248] h-1.5 rounded-md" style="width: 50%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <h2 class="text-gray-400 font-medium">WordPress</h2>
+                            <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                                <div class="bg-[#F22248] h-1.5 rounded-md" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <h2 class="text-gray-400 font-medium">Flutter</h2>
+                            <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                                <div class="bg-[#F22248] h-1.5 rounded-md" style="width: 40%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <h2 class="text-gray-400 font-medium">MySQL</h2>
+                            <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                                <div class="bg-[#F22248] h-1.5 rounded-md" style="width: 50%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <h2 class="text-gray-400 font-medium">Adobe Photoshop</h2>
+                            <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                                <div class="bg-[#F22248] h-1.5 rounded-md" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <h2 class="text-gray-400 font-medium">Adobe Illustrator</h2>
+                            <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                                <div class="bg-[#F22248] h-1.5 rounded-md" style="width: 50%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <h2 class="text-gray-400 font-medium">Figma</h2>
+                            <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                                <div class="bg-[#F22248] h-1.5 rounded-md" style="width: 50%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <h2 class="text-gray-400 font-medium">Social Media</h2>
+                            <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                                <div class="bg-[#F22248] h-1.5 rounded-md" style="width: 40%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- services -->
+    <div id="services" class="section dark:bg-slate-800 py-20">
+        <div class="container mx-auto px-3 md:px-3 text-center">
+            <h1 class="text-[#F20530] font-bold uppercase">Serviços</h1>
+            <h1 class="text-3xl dark:text-white">O que eu ofereço?</h1>
+            <p class="md:w-2/3 mx-auto text-gray-400 mb-10">
+                Minha abordagem ao design de sites é criar experiências que fortalecem a marca da sua empresa,
+                garantindo facilidade de uso e simplicidade para o seu público.
+            </p>
+            <div class="py-5 flex flex-wrap gap-6">
+                <!-- card 1 -->
+                <div class="w-full md:w-52 shadow md:shadow-xl rounded-lg p-5 flex flex-col items-center gap-3">
+                    <nav class="w-14 h-14 m-auto rounded-full bg-[#F20530] flex justify-center items-center transition-all box-icons">
+                        <img class="w-8 h-8" data="./img/icons/designer web.png" alt="Web Design Icon" />
+                    </nav>
+                    <h2 class="font-medium text-lg dark:text-white">Web Design</h2>
+                    <p class="text-gray-400">
+                        Criação de websites atraentes e funcionais, focados na experiência do usuário.
+                    </p>
+
+                </div>
+                <!-- card 2 -->
+                <div class="w-full md:w-52 shadow md:shadow-xl rounded-lg p-5 flex flex-col items-center gap-3">
+                    <nav class="w-14 h-14 m-auto rounded-full bg-[#F20530] flex justify-center items-center transition-all box-icons">
+                        <img class="w-8 h-8" data="./img/icons/internet.png" alt="Web Design Icon" />
+                    </nav>
+                    <h2 class="font-medium text-lg dark:text-white">Social Media</h2>
+                    <p class="text-gray-400">
+                        Desenvolvimento de estratégias criativas e impactantes para mídias sociais.
+                    </p>
+
+                </div>
+                <!-- card 3 -->
+                <div class="w-full md:w-52 shadow md:shadow-xl rounded-lg p-5 flex flex-col items-center gap-3">
+                    <nav class="w-14 h-14 m-auto rounded-full bg-[#F20530] flex justify-center items-center transition-all box-icons">
+                        <img class="w-8 h-8" data="./img/icons/design-graphic.png" alt="Web Design Icon" />
+                    </nav>
+                    <h2 class="font-medium text-lg dark:text-white">Design Gráfico</h2>
+                    <p class="text-gray-400">
+                        Criação de materiais visuais impactantes que transmitem a essência da sua marca.
+                    </p>
+
+                </div>
+                <!-- card 4 -->
+                <div class="w-full md:w-52 shadow md:shadow-xl rounded-lg p-5 flex flex-col items-center gap-3">
+                    <nav class="w-14 h-14 m-auto rounded-full bg-[#F20530] flex justify-center items-center transition-all box-icons">
+                        <img class="w-8 h-8" data="./img/icons/desenvolvimento-web.png" alt="Web Design Icon" />
+                    </nav>
+                    <h2 class="font-medium text-lg dark:text-white">Desenvolvimento Web</h2>
+                    <p class="text-gray-400">
+                        Desenvolvimento de aplicações web personalizadas com foco em funcionalidade.
+                    </p>
+
+                </div>
+                <!-- card 5 -->
+                <div class="w-full md:w-52 shadow md:shadow-xl rounded-lg p-5 flex flex-col items-center gap-3">
+                    <nav class="w-14 h-14 m-auto rounded-full bg-[#F20530] flex justify-center items-center transition-all box-icons">
+                        <img class="w-8 h-8" data="./img/icons/mobile-development.png" alt="Web Design Icon" />
+                    </nav>
+                    <h2 class="font-medium text-lg dark:text-white">Desenvolvimento Mobile</h2>
+                    <p class="text-gray-400">
+                        Criação de aplicativos móveis que oferecem experiências envolventes e funcionais.
+                    </p>
+
+                </div>
+                <!-- card 6 -->
+                <div class="w-full md:w-52 shadow md:shadow-xl rounded-lg p-5 flex flex-col items-center gap-3">
+                    <nav class="w-14 h-14 m-auto rounded-full bg-[#F20530] flex justify-center items-center transition-all box-icons">
+                        <img class="w-8 h-8" data="./img/icons/dj-mixer.png" alt="Web Design Icon" />
+                    </nav>
+                    <h2 class="font-medium text-lg dark:text-white">Serviços de DJ</h2>
+                    <p class="text-gray-400">
+                        Ofereço experiências musicais únicas que animam eventos e festas.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- works -->
+    <div id="works" class="section  py-40 dark:bg-slate-900 bg-gray-100">
+        <div class="container mx-auto px-3 md:px-3">
+            <!-- top -->
+            <div class="flex flex-col gap-3 items-center">
+                <h1 class="text-[#F20530] font-bold uppercase">Portifolio</h1>
+                <h1 class="text-3xl dark:text-white">Trabalhos & Projectos</h1>
+                <p class="md:w-2/3 text-center text-gray-400">
+                    Descubra alguns dos meus projetos mais recentes, onde criatividade e tecnologia se encontram. Cada
+                    trabalho é uma nova oportunidade de transformar ideias em experiências visuais impactantes. Explore
+                    abaixo!
+                </p>
+            </div>
+
+            <nav class="border-b border-gray-200">
+                <div class="md:flex flex-wrap justify-center space-x-4" role="tablist">
+                    <button
+                        class="nav-link text-gray-600 font-semibold py-2 px-4 transition duration-300 ease-in-out hover:text-[#F20530] focus:outline-none rounded-lg"
+                        id="nav-home-tab" data-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                        aria-selected="true" onclick="selectTab('nav-home')">Designer Grafico</button>
+                    <button
+                        class="nav-link text-gray-600 font-semibold py-2 px-4 transition duration-300 ease-in-out hover:text-[#F20530] focus:outline-none rounded-lg"
+                        id="nav-profile-tab" data-target="#nav-profile" type="button" role="tab"
+                        aria-controls="nav-profile" aria-selected="false" onclick="selectTab('nav-profile')">Designer
+                        Web</button>
+                    <button class="nav-link text-gray-400 font-semibold py-2 px-4 cursor-not-allowed rounded-lg"
+                        id="nav-disabled-tab" type="button" aria-controls="nav-disabled" aria-selected="false"
+                        disabled>Sistemas</button>
+                    <button class="nav-link text-gray-400 font-semibold py-2 px-4 cursor-not-allowed rounded-lg"
+                        id="nav-disabled-tab" type="button" aria-controls="nav-disabled" aria-selected="false"
+                        disabled>Social Midia</button>
+                    <button
+                        class="nav-link text-gray-600 font-semibold py-2 px-4 transition duration-300 ease-in-out hover:text-[#F20530] focus:outline-none cursor-not-allowed rounded-lg"
+                        id="nav-contact-tab" data-target="#nav-contact" type="button" role="tab"
+                        aria-controls="nav-contact" aria-selected="false" onclick="selectTab('nav-contact')"
+                        disabled>Dj</button>
+                </div>
+            </nav>
+
+            <div class="tab-content  rounded-lg">
+                <!-- container 1 -->
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+                    tabindex="0">
+                    <div class="p-5 sm:p-0 flex flex-wrap justify-center">
+
+                        <div class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
+                            onclick="openModal(this)">
+                            <img class="object-cover w-full h-full rounded-lg transition duration-[1s]"
+                                data="img/graphic/5868616109387791765 (1).jpg" onclick="openModal(this)">
+                        </div>
+
+                        <!-- card -->
+                        <div class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
+                            onclick="openModal(this)">
+                            <img class="object-cover w-full h-full rounded-lg transition"
+                                data="./img/graphic/5868616109387791766.jpg" />
+                        </div>
+                        <!-- card -->
+                        <div class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
+                            onclick="openModal(this)">
+                            <img class="object-cover w-full h-full rounded-lg transition"
+                                data="./img/graphic/5868616109387791767 (1).jpg" />
+                        </div>
+                        <!-- card -->
+                        <div class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
+                            onclick="openModal(this)">
+                            <img class="object-cover w-full h-full rounded-lg transition"
+                                data="./img/graphic/5868616109387791768 (1).jpg" />
+                        </div>
+                        <!-- card -->
+                        <div class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
+                            onclick="openModal(this)">
+                            <img class="object-cover w-full h-full rounded-lg transition"
+                                data="./img/graphic/5868616109387791769.jpg" />
+                        </div>
+                        <!-- card -->
+                        <div class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
+                            onclick="openModal(this)">
+                            <img class="object-cover w-full h-full rounded-lg transition"
+                                data="./img/graphic/5868616109387791770.jpg" />
+                        </div>
+                        <!-- card -->
+                        <div class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
+                            onclick="openModal(this)">
+                            <img class="object-cover w-full h-full rounded-lg transition"
+                                data="./img/graphic/5868616109387791772 (1).jpg" />
+                        </div>
+                        <!-- card -->
+                        <div class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
+                            onclick="openModal(this)">
+                            <img class="object-cover w-full h-full rounded-lg transition"
+                                data="./img/graphic/Verao_01.png" />
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden"
+                onclick="closeModal()">
+                <img id="modalImage" class="max-w-full max-h-full" src="" alt="Imagem em grande escala" />
+            </div>
+
+            <!-- container-2  -->
+            <div class="tab-pane fade pt-10" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+                tabindex="0">
+                <div class="p-5 sm:p-0 flex flex-wrap gap-2">
+
+                    <!-- card  -->
+                    <div
+                        class="h-[16em] md:w-[18em] rounded-lg  text-white font-nunito  flex justify-center items-left flex-col gap-[0.75em] backdrop-blur-[12px] bg-[url('/img/dev.png')] bg-cover bg-center">
+                        <div
+                            class=" bg-gradient-to-br from-[#f205317e] to-[rgba(75,30,133,0.43)] w-full h-full rounded-lg flex flex-col justify-center items gap-10 p-5">
+                            <div>
+                                <h1 class="text-[2em] font-medium pb-5">Igreja</h1>
+                                <p class="text-[0.85em]">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolorum
+                                    blanditiis pariatur sequi magni.
+                                </p>
+                            </div>
+
+                            <button
+                                class="h-fit w-fit px-[1em] py-[0.25em] border-[1px] rounded-full flex justify-center items-center gap-[0.5em] overflow-hidden group hover:translate-y-[0.125em] duration-200 backdrop-blur-[12px]">
+                                <p>Visualizar</p>
+
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <!-- card  -->
+                    <div
+                        class="h-[16em] md:w-[18em] rounded-lg  text-white font-nunito  flex justify-center items-left flex-col gap-[0.75em] backdrop-blur-[12px] bg-[url('/img/dev.png')] bg-cover bg-center">
+                        <div
+                            class=" bg-gradient-to-br from-[#f205317e] to-[rgba(75,30,133,0.43)] w-full h-full rounded-lg flex flex-col justify-center items gap-10 p-5">
+                            <div>
+                                <h1 class="text-[2em] font-medium pb-5">Salao Eventos</h1>
+                                <p class="text-[0.85em]">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolorum
+                                    blanditiis pariatur sequi magni.
+                                </p>
+                            </div>
+
+                            <button
+                                class="h-fit w-fit px-[1em] py-[0.25em] border-[1px] rounded-full flex justify-center items-center gap-[0.5em] overflow-hidden group hover:translate-y-[0.125em] duration-200 backdrop-blur-[12px]">
+                                <p>Visualizar</p>
+
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- container-3  -->
+            <!-- <div class="tab-pane fade hidden" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"
+                tabindex="0">
+                <div class="p-5 sm:p-0 flex flex-wrap "> -->
+                    <!-- card -->
+                    <!-- <div
+                        class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110">
+                        <img src="./img/item.png" />
+                    </div> -->
+                    <!-- card -->
+                    <!-- <div
+                        class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110">
+                        <img src="./img/item.png" />
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- bottom -->
+
+        </div>
+    </div>
+
+
+    <!-- plans -->
+    <div id="plans" class="section py-40 px-3 md:px-3 dark:bg-slate-900">
+        <div class="container mx-auto">
+            <!-- Top Section -->
+            <div class="flex flex-col gap-3 items-center pb-5">
+                <h1 class="text-[#F20530] font-bold uppercase">Planos</h1>
+                <h1 class="text-3xl dark:text-white">Escolha Seu Plano</h1>
+                <p class="md:w-2/3 text-center text-gray-400">
+                    Oferecemos uma variedade de planos para atender às suas necessidades e objetivos. Cada plano foi
+                    desenvolvido com atenção aos detalhes, garantindo que você tenha acesso aos melhores recursos e
+                    suporte.
+                </p>
+            </div>
+
+            <!-- Navigation Tabs -->
+            <div class="flex justify-center gap-4 mb-8">
+
+                <button
+                    class="nav-link text-gray-600 font-semibold py-2 px-4 transition duration-300 ease-in-out hover:text-[#F20530] focus:outline-none rounded-lg"
+                    id="nav1Btn" data-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                    aria-selected="true" onclick="selectTab('nav-home')">Designer Web & Sistemas</button>
+
+                <button
+                    class="nav-link text-gray-600 font-semibold py-2 px-4 transition duration-300 ease-in-out hover:text-[#F20530] focus:outline-none rounded-lg"
+                    id="nav2Btn" data-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                    aria-selected="true" onclick="selectTab('nav-home')">Designer Grafico</button>
+
+            </div>
+            <hr>
+            <!-- Navigation Content -->
+            <div id="nav1" class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 pt-10">
+
+                <!-- Malta Silver -->
+                <div
+                    class="border-4 border-gray-200 hover:border-[#F20530] p-6 rounded-lg shadow-md mb-6 transition-transform duration-300 transform hover:scale-105">
+                    <h2 class="text-center text-2xl font-semibold text-gray-700 dark:text-white mb-2">Ouro</h2>
+                    <p class="text-center text-gray-800 dark:text-white font-medium mb-4">
+                        Bom Para Pessoas Individuais e Páginas Estáticas
+                    </p>
+                    <p class="text-center text-sm text-gray-500 mb-6">
+                        Tudo que você precisa para apresentar seus serviços, habilidades ou outras informações.
+                    </p>
+                    <div class="text-center text-4xl font-bold dark:text-white mb-6">
+                        5,000 MT
+                    </div>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Páginas (1)
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Design Responsivo (UI/UX)
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Escalável
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> SEO (Otimização de Busca)
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Estratégias de Marketing na Página
+                        </li>
+                        <li class="flex items-center text-red-500">
+                            <i class="bi bi-x-circle-fill mr-2"></i> Hospedagem
+                        </li>
+                        <li class="flex items-center text-red-500">
+                            <i class="bi bi-x-circle-fill mr-2"></i> Domínio (profissional)
+                        </li>
+                        <li class="flex items-center text-red-500">
+                            <i class="bi bi-x-circle-fill mr-2"></i> Subdomínios (0)
+                        </li>
+                        <li class="flex items-center text-red-500">
+                            <i class="bi bi-x-circle-fill mr-2"></i> Email Corporativo (0)
+                        </li>
+                        <li class="flex items-center text-red-500">
+                            <i class="bi bi-x-circle-fill mr-2"></i> Backend
+                        </li>
+                        <li class="flex items-center text-red-500">
+                            <i class="bi bi-x-circle-fill mr-2"></i> Integrações de Plugins
+                        </li>
+                        <li class="flex items-center text-red-500">
+                            <i class="bi bi-x-circle-fill mr-2"></i> Conteúdo Dinâmico no Website
+                        </li>
+                        <li class="flex items-center text-red-500">
+                            <i class="bi bi-x-circle-fill mr-2"></i> Suporte (6 meses)
+                        </li>
+                    </ul>
+                    <button
+                        class="w-full border-2 border-gray-400 text-gray-400 rounded-lg py-2 transition duration-300 hover:bg-gray-400 hover:text-white">
+                        <a href="#contact"> CONTACTAR PARA ADQUIRIR</a>
+                    </button>
+                </div>
+
+                <!-- Malta Gold -->
+                <div
+                    class="border-4 border-gray-200 hover:border-[#F20530] p-6 rounded-lg shadow-md mb-6 transition-transform duration-300 transform hover:scale-105">
+                    <div class="text-center dark:text-white  rounded-full w-28 mx-auto py-1 mb-4 border border-red-500">
+                        MAIS POPULAR
+                    </div>
+                    <h2 class="text-center text-2xl font-semibold dark:text-white mb-2">Prata</h2>
+                    <p class="text-center text-gray-800 font-medium mb-4 dark:text-white">
+                        Perfeito Para Individuais e Pequenas Empresas
+                    </p>
+                    <p class="text-center text-sm text-gray-500 mb-6 ">
+                        Tudo que você precisa para listar seus serviços, habilidades e gerir algum conteúdo dinâmico.
+                    </p>
+                    <div class="text-center text-4xl font-bold dark:text-white mb-6">
+                        10,000 MT
+                    </div>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Páginas (3)
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Design Responsivo (UI/UX)
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Escalável
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> SEO (Otimização de Busca)
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Estratégias de Marketing na Página
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Hospedagem (6 meses)
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Domínio (afiliado)
+                        </li>
+                        <li class="flex items-center text-red-500">
+                            <i class="bi bi-x-circle-fill mr-2"></i> Subdomínios (0)
+                        </li>
+                        <li class="flex items-center text-red-500">
+                            <i class="bi bi-x-circle-fill mr-2"></i> Email Corporativo (0)
+                        </li>
+                        <li class="flex items-center text-red-500">
+                            <i class="bi bi-x-circle-fill mr-2"></i> Backend
+                        </li>
+                        <li class="flex items-center text-red-500">
+                            <i class="bi bi-x-circle-fill mr-2"></i> Integrações de Plugins
+                        </li>
+                        <li class="flex items-center text-red-500">
+                            <i class="bi bi-x-circle-fill mr-2"></i> Conteúdo Dinâmico no Website
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Suporte (6 meses)
+                        </li>
+                    </ul>
+                    <button
+                        class="w-full border-2 border-gray-400 text-gray-400 rounded-lg py-2 transition duration-300 hover:bg-gray-400 hover:text-white">
+                        <a href="#contact"> CONTACTAR PARA ADQUIRIR</a>
+                    </button>
+                </div>
+
+                <!-- Malta Platinum -->
+                <div
+                    class="border-4 border-gray-200 hover:border-[#F20530] p-6 rounded-lg shadow-md mb-6 transition-transform duration-300 transform hover:scale-105">
+                    <h2 class="text-center text-2xl font-semibold dark:text-white mb-2"> Platina</h2>
+                    <p class="text-center text-gray-800 font-medium mb-4 dark:text-white">
+                        Bom Para Empresas Médias E Profissionais
+                    </p>
+                    <p class="text-center text-sm text-gray-500 mb-6">
+                        Tudo que você precisa para apresentar seus serviços, habilidades e fazer gestão de conteúdos
+                        dinâmicos.
+                    </p>
+                    <div class="text-center text-4xl font-bold dark:text-white mb-6">
+                        15,000 MT
+                    </div>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Páginas (5)
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Design Responsivo (UI/UX)
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Escalável
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> SEO (Otimização de Busca)
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Estratégias de Marketing na Página
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Hospedagem (6 meses)
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Domínio (profissional)
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Subdomínios (1)
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Email Corporativo (1)
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Backend
+                        </li>
+                        <li class="flex items-center text-red-500">
+                            <i class="bi bi-x-circle-fill mr-2"></i> Integrações de Plugins
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Conteúdo Dinâmico no Website
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Suporte (6 meses)
+                        </li>
+                    </ul>
+                    <button
+                        class="w-full border-2 border-gray-400 text-gray-400 rounded-lg py-2 transition duration-300 hover:bg-gray-400 hover:text-white">
+                        <a href="#contact"> CONTACTAR PARA ADQUIRIR</a>
+                    </button>
+                </div>
+
+
+                <!-- Malta Platinum -->
+                <div
+                    class="border-4 border-gray-200 hover:border-[#F20530] p-6 rounded-lg shadow-md mb-6 transition-transform duration-300 transform hover:scale-105">
+                    <h2 class="text-center text-2xl font-semibold dark:text-white mb-2"> Paládio</h2>
+                    <p class="text-center text-gray-800 font-medium mb-4 dark:text-white">
+                        Bom Para Empresas Grandes
+                    </p>
+                    <p class="text-center text-sm text-gray-500 mb-6">
+                        Tudo que você precisa para apresentar seus serviços, habilidades e fazer gestão de conteúdos
+                        dinâmicos.
+                    </p>
+                    <div class="text-center text-4xl font-bold dark:text-white mb-6">
+                        20,000 MT
+                    </div>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Páginas (5)
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Design Responsivo (UI/UX)
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Escalável
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> SEO (Otimização de Busca)
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Estratégias de Marketing na Página
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Hospedagem (6 meses)
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Domínio (profissional)
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Subdomínios (1)
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Email Corporativo (1)
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Backend
+                        </li>
+
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Conteúdo Dinâmico no Website
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Suporte (5 meses)
+                        </li>
+                    </ul>
+                    <button
+                        class="w-full border-2 border-gray-400 text-gray-400 rounded-lg py-2 transition duration-300 hover:bg-gray-400 hover:text-white">
+                        <a href="#contact"> CONTACTAR PARA ADQUIRIR</a>
+                    </button>
+                </div>
+
+
+                <!-- Malta Platinum -->
+                <div
+                    class="border-4 border-gray-200 hover:border-[#F20530] p-6 rounded-lg shadow-md mb-6 transition-transform duration-300 transform hover:scale-105">
+                    <h2 class="text-center text-2xl font-semibold dark:text-white mb-2"> Ródio</h2>
+                    <p class="text-center text-gray-800 font-medium mb-4 dark:text-white">
+                        Excelente Para Empresas Grandes
+                    </p>
+                    <p class="text-center text-sm text-gray-500 mb-6">
+                        Tudo que você precisa para apresentar seus serviços, habilidades e fazer gestão de conteúdos
+                        dinâmicos.
+                    </p>
+                    <div class="text-center text-4xl font-bold dark:text-white mb-6">
+                        +45,000 MT
+                    </div>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Páginas (5)
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Design Responsivo (UI/UX)
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Escalável
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> SEO (Otimização de Busca)
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Estratégias de Marketing na Página
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Hospedagem (6 meses)
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Domínio (profissional)
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Subdomínios (1)
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Email Corporativo (1)
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Backend
+                        </li>
+
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Conteúdo Dinâmico no Website
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Suporte (5 meses)
+                        </li>
+                    </ul>
+                    <button
+                        class="w-full border-2 border-gray-400 text-gray-400 rounded-lg py-2 transition duration-300 hover:bg-gray-400 hover:text-white">
+                        <a href="#contact"> CONTACTAR PARA ADQUIRIR</a>
+                    </button>
+                </div>
+
+
+            </div>
+
+            <div id="nav2" class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 pt-10">
+                <!-- Novos Cards para a Segunda Navegação -->
+                <!-- Card 6 -->
+
+                <div
+                    class="border-4 border-gray-200 hover:border-[#F20530] p-6 rounded-lg shadow-md mb-6 transition-transform duration-300 transform hover:scale-105">
+                    <h2 class="text-center text-2xl font-semibold dark:text-white mb-2">Básico</h2>
+                    <p class="text-center text-gray-800 font-medium mb-4 dark:text-white">
+                        Ideal para pequenas necessidades de design
+                    </p>
+                    <p class="text-center text-sm text-gray-500 mb-6">
+                        Soluções simples para empresas que estão começando.
+                    </p>
+                    <div class="text-center text-4xl font-bold dark:text-white mb-6">
+                        4,000 MT
+                    </div>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Criação de Flyers Básicos
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Design de Posts Simples
+                        </li>
+                        <li class="flex items-center text-red-500">
+                            <i class="bi bi-x-circle-fill mr-2"></i> Criação de Logotipo
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Revisões (2)
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Suporte (1 mês)
+                        </li>
+                    </ul>
+                    <button
+                        class="w-full border-2 border-gray-400 text-gray-400 rounded-lg py-2 transition duration-300 hover:bg-gray-400 hover:text-white">
+                        <a href="#contact">CONTACTAR PARA ADQUIRIR</a>
+                    </button>
+                </div>
+
+                <div
+                    class="border-4 border-gray-200 hover:border-[#F20530] p-6 rounded-lg shadow-md mb-6 transition-transform duration-300 transform hover:scale-105">
+                    <h2 class="text-center text-2xl font-semibold dark:text-white mb-2">Prata</h2>
+                    <p class="text-center text-gray-800 font-medium mb-4 dark:text-white">
+                        Para profissionais que precisam de um visual aprimorado
+                    </p>
+                    <p class="text-center text-sm text-gray-500 mb-6">
+                        Soluções visuais para redes sociais e materiais impressos.
+                    </p>
+                    <div class="text-center text-4xl font-bold dark:text-white mb-6">
+                        8,000 MT
+                    </div>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Criação de Banners e Flyers
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Design para Redes Sociais
+                        </li>
+                        <li class="flex items-center text-red-500">
+                            <i class="bi bi-x-circle-fill mr-2"></i> Identidade Visual Completa
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Revisões (3)
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Suporte (2 meses)
+                        </li>
+                    </ul>
+                    <button
+                        class="w-full border-2 border-gray-400 text-gray-400 rounded-lg py-2 transition duration-300 hover:bg-gray-400 hover:text-white">
+                        <a href="#contact">CONTACTAR PARA ADQUIRIR</a>
+                    </button>
+                </div>
+
+                <div
+                    class="border-4 border-gray-200 hover:border-[#F20530] p-6 rounded-lg shadow-md mb-6 transition-transform duration-300 transform hover:scale-105">
+                    <h2 class="text-center text-2xl font-semibold dark:text-white mb-2">Gold</h2>
+                    <p class="text-center text-gray-800 font-medium mb-4 dark:text-white">
+                        Ideal para marcas em crescimento
+                    </p>
+                    <p class="text-center text-sm text-gray-500 mb-6">
+                        Aumente a presença da sua marca com designs de qualidade.
+                    </p>
+                    <div class="text-center text-4xl font-bold dark:text-white mb-6">
+                        15,000 MT
+                    </div>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Criação de Logotipo
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Design de Cartões de Visita
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Design para Redes Sociais
+                        </li>
+                        <li class="flex items-center text-red-500">
+                            <i class="bi bi-x-circle-fill mr-2"></i> Consultoria de Branding
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Revisões (5)
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Suporte (3 meses)
+                        </li>
+                    </ul>
+                    <button
+                        class="w-full border-2 border-gray-400 text-gray-400 rounded-lg py-2 transition duration-300 hover:bg-gray-400 hover:text-white">
+                        <a href="#contact">CONTACTAR PARA ADQUIRIR</a>
+                    </button>
+                </div>
+
+                <div
+                    class="border-4 border-gray-200 hover:border-[#F20530] p-6 rounded-lg shadow-md mb-6 transition-transform duration-300 transform hover:scale-105">
+                    <h2 class="text-center text-2xl font-semibold dark:text-white mb-2">Platina</h2>
+                    <p class="text-center text-gray-800 font-medium mb-4 dark:text-white">
+                        Para empresas que desejam destacar-se
+                    </p>
+                    <p class="text-center text-sm text-gray-500 mb-6">
+                        Design completo para identidade visual e campanhas.
+                    </p>
+                    <div class="text-center text-4xl font-bold dark:text-white mb-6">
+                        25,000 MT
+                    </div>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Identidade Visual Completa
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Design de Brochuras e Catálogos
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Design para Redes Sociais e Impressos
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Consultoria de Branding
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Revisões (7)
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Suporte (6 meses)
+                        </li>
+                    </ul>
+                    <button
+                        class="w-full border-2 border-gray-400 text-gray-400 rounded-lg py-2 transition duration-300 hover:bg-gray-400 hover:text-white">
+                        <a href="#contact">CONTACTAR PARA ADQUIRIR</a>
+                    </button>
+                </div>
+
+                <div
+                    class="border-4 border-gray-200 hover:border-[#F20530] p-6 rounded-lg shadow-md mb-6 transition-transform duration-300 transform hover:scale-105">
+                    <h2 class="text-center text-2xl font-semibold dark:text-white mb-2">Diamante</h2>
+                    <p class="text-center text-gray-800 font-medium mb-4 dark:text-white">
+                        O pacote premium para uma presença visual marcante
+                    </p>
+                    <p class="text-center text-sm text-gray-500 mb-6">
+                        Estratégia completa de design e marketing visual.
+                    </p>
+                    <div class="text-center text-4xl font-bold dark:text-white mb-6">
+                        40,000 MT
+                    </div>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Identidade Visual e Logotipo
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Design de Materiais Impressos
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Estratégia de Redes Sociais
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Consultoria de Branding
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Revisões (10)
+                        </li>
+                        <li class="flex items-center text-green-600">
+                            <i class="bi bi-check-circle-fill mr-2"></i> Suporte (12 meses)
+                        </li>
+                    </ul>
+                    <button
+                        class="w-full border-2 border-gray-400 text-gray-400 rounded-lg py-2 transition duration-300 hover:bg-gray-400 hover:text-white">
+                        <a href="#contact">CONTACTAR PARA ADQUIRIR</a>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- contact -->
+    <div id="contact" class="section py-32 dark:bg-slate-900 bg-gray-100">
+        <div class="container mx-auto px-3 md:px-3 flex flex-col justify-center">
+            <!-- Topo -->
+            <div class="flex flex-col gap-3 items-center text-center mb-10">
+                <h1 class="text-[#F20530] font-bold uppercase">CONTATO</h1>
+                <h2 class="text-3xl dark:text-white">Tem uma Pergunta?</h2>
+                <p class="w-full sm:w-3/4 lg:w-1/2 text-gray-400">
+                    Tem uma ideia? Vamos discutir e ver o que podemos fazer juntos.
+                </p>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-10">
+                <div class="flex flex-col md:flex-row w-full gap-10">
+                    <!-- Formulário -->
+                    <form class="w-full flex flex-col gap-5 h-full justify-between ">
+                        <input
+                            class="p-4 w-full border border-[#A6142F] rounded-md dark:bg-slate-700 dark:border-[#F20530] dark:text-white focus:outline-none focus:ring-2 focus:ring-[#A6142F]"
+                            type="text" placeholder="Seu Nome" required />
+                        <input
+                            class="p-4 w-full border border-[#A6142F] rounded-md dark:bg-slate-700 dark:border-[#F20530] dark:text-white focus:outline-none focus:ring-2 focus:ring-[#A6142F]"
+                            type="email" placeholder="Seu Email" required />
+                        <textarea
+                            class="p-4 w-full border border-[#A6142F] rounded-md dark:bg-slate-700 dark:border-[#F20530] dark:text-white focus:outline-none focus:ring-2 focus:ring-[#A6142F]"
+                            cols="30" rows="7" placeholder="Conte-me sobre sua ideia..." required></textarea>
+                        <button
+                            class="w-full bg-[#F22248] text-white font-medium px-4 py-2 rounded-md hover:bg-[#A6142F] transition duration-300">
+                            Enviar
+                        </button>
+                    </form>
+
+                    <div class="lg:w-[40%] flex flex-col gap-5">
+
+
+
+
+                        <nav class="flex flex-col md:flex-row justify-around gap-5">
+                            <div class="bg-white shadow-lg rounded-lg p-3 md:w-[200px] text-center flex flex-col gap-3">
+                                <div class="flex justify-center ">
+                                    <i class="bi-telephone-fill text-2xl"></i>
+                                </div>
+                                <h2 class="text-2xl font-semibold text-gray-800">Contato</h2>
+
+
+                                <nav>
+                                    <span class="text-lg font-bold text-[#F22248] mt-4">+(258) 85 671 6587</span>
+                                    <hr>
+                                    <span class="text-lg font-bold text-[#F22248] mt-4">+(258) 84 948 5816</span>
+                                </nav>
+
+
+                                <a class="mx-5 bg-[#F22248] text-white py-2 px-4 rounded-full hover:bg-[#A6142F] transition duration-200"
+                                    href="tel:+258856716587" target="_blank">Falar agora</a>
+
+
+                            </div>
+
+
+                            <div class="bg-white shadow-lg rounded-lg p-3 md:w-[200px] text-center flex flex-col gap-3">
+                                <div class="flex justify-center">
+                                    <i class="bi-whatsapp text-2xl"></i>
+                                </div>
+                                <h2 class="text-2xl font-semibold text-gray-800">Whatsapp</h2>
+
+
+                                <nav>
+                                    <span class="text-lg font-bold text-[#F22248] mt-4">+(258) 85 671 6587</span>
+
+
+                                </nav>
+
+                                <a class="mx-5 bg-[#F22248] text-white py-2 px-4 rounded-full hover:bg-[#A6142F] transition duration-200"
+                                    href="https://api.whatsapp.com/send/?phone=%2B258856716587&text&type=phone_number&app_absent=0"
+                                    target="_blank">Falar agora</a>
+
+                            </div>
+
+
+                        </nav>
+
+
+                        <nav class="flex flex-col md:flex-row justify-around gap-5">
+                            <div class="bg-white shadow-lg rounded-lg p-3 md:w-[200px] text-center flex flex-col gap-3">
+                                <div class="flex justify-center ">
+                                    <i class="bi-instagram text-2xl"></i>
+                                </div>
+                                <h2 class="text-2xl font-semibold text-gray-800">Instagram</h2>
+
+
+                                <nav>
+                                    <span class="text-lg font-bold text-[#F22248] mt-4">Adriano2607</span>
+
+                                </nav>
+
+                                <a class="mx-5 bg-[#F22248] text-white py-2 px-4 rounded-full hover:bg-[#A6142F] transition duration-200"
+                                    href="https://www.instagram.com/ald_adriano258/
+                                    " target="_blank">Messagem</a>
+
+                            </div>
+
+
+                            <div class="bg-white shadow-lg rounded-lg p-3 md:w-[200px] text-center flex flex-col gap-3">
+                                <div class="flex justify-center ">
+                                    <i class="bi-envelope-arrow-up-fill text-2xl"></i>
+                                </div>
+                                <h2 class="text-2xl font-semibold text-gray-800">Email</h2>
+
+
+                                <nav>
+                                    <span
+                                        class="text-wrap text-lg font-bold text-[#F22248] mt-4 ">adrianovelemo76</span>
+
+                                </nav>
+
+                                <a class="mx-5 bg-[#F22248] text-white py-2 px-4 rounded-full hover:bg-[#A6142F] transition duration-200"
+                                    href="https://www.facebook.com/adriano_luis_dimande
+                                    " target="_blank">Messagem</a>
+
+                            </div>
+
+
+                        </nav>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="section  w-full bg-gray-800">
+        <div class="container mx-auto py-5 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <img class="w-8" data="./img/dev.png" alt="" />
+                <span class="text-2xl font-bold text-white">ALD</span>
+            </div>
+            <span class="hidden md:block font-medium text-white">© <span id="year">ano</span> Adriano Luís Dimande.
+                Feito por mim, com carinho</span>
+            <ul class="flex gap-2">
+                <a href="tel:+258856716587"><i class="text-white hover:text-[#F22248] bi bi-telephone-fill"
+                        target="_blank"></i></a>
+                <a clas
+                    href=" https://api.whatsapp.com/send/?phone=%2B258856716587&text&type=phone_number&app_absent=0"><i
+                        class="text-white hover:text-[#F22248] bi bi-whatsapp" target="_blank"></i></a>
+                <a clas href="https://www.facebook.com/adriano_luis_dimande
+                "><i class="text-white hover:text-[#F22248] bi bi-facebook" target="_blank"></i></a>
+                <a clas href="https://www.instagram.com/ald_adriano258/"><i
+                        class="text-white hover:text-[#F22248] bi bi-instagram" target="_blank"></i></a>
+                <a clas href="https://www.linkedin.com/in/adriano-luis-dimande-532744286/"><i
+                        class="text-white hover:text-[#F22248] bi bi-linkedin" target="_blank"></i></a>
+                \
+
+            </ul>
+        </div>
+    </div>
+    <script src="./tabs.js"></script>
+    <script src="./scrool.js"></script>
+    <script src="./lazyload.js"></script>
+    <script src="./app.js"></script>
+    <script src="./autotyping.js"></script>
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const links = document.querySelectorAll('.nav-link');
+
+            links.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    // Remove a classe "active" de todos os links
+                    links.forEach(l => l.classList.remove('text-[#EC4747]', 'font-bold'));
+
+                    // Adiciona a classe "active" ao link clicado
+                    e.currentTarget.classList.add('text-[#EC4747]', 'font-bold');
+
+                    // Muda a cor de fundo do nav
+                    document.querySelector('.nav-link.active')?.classList.remove('active');
+                    e.currentTarget.classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
