@@ -165,3 +165,7 @@ html{
     object-fit: cover;
     /* transition: 2s; */
 }
+
+.box-icons-services{
+    background:red ;
+}
