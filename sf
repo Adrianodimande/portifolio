@@ -45,3 +45,8 @@
    onclick="openModal(this)">
    <img class="object-cover w-full h-full rounded-lg" data="./img/graphic/Verao_01.png" />
 </div>
+
+
+
+
+min-w-[100px] min-h-[200px] md:w-5/12 lg:w-1/5 my-3 md:my-10 m-1
