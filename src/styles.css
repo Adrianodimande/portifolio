@@ -1,171 +1,214 @@
 html{
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
+  }
+  
+  /* Estilo para o scroll personalizado */
+  ::-webkit-scrollbar {
+      width: 12px;
+      /* Largura da barra de rolagem */
+  }
+  
+  ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      /* Cor do fundo da barra de rolagem */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+      background: red;
+      /* Cor da parte que pode ser arrastada */
+      border-radius: 10px;
+      /* Arredondar os cantos do thumb */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+      background: darkred;
+      /* Cor do thumb ao passar o mouse */
+  }
+  
+  
+  /* scrool  */
+  
+  .section {
+      opacity: 0;
+      /* Começa invisível */
+      transition: opacity 2s ease-in-out;
+      /* Transição suave */
+  
+  }
+  
+  .section.visible {
+      opacity: 1;
+      /* Visível quando a classe 'visible' é adicionada */
+  }
+  
+  
+  /* btn contacte me  */
+  
+  
+  #btn-contacte {
+      animation: animationbtn 2s infinite alternate;
+  }
+  
+  @keyframes animationbtn {
+      0% {
+          padding-inline: 10px;
+      }
+  
+      100% {
+          padding-inline: 20px;
+      }
+  }
+  
+  
+  /* bg-person  */
+  
+  
+  #bg-person {
+      animation: animationperson 2s infinite alternate;
+  }
+  
+  @keyframes animationperson {
+      0% {
+          margin-block: 0px;
+      }
+  
+      100% {
+          margin-block: 120px;
+      }
+  }
+  
+  
+  /* banner  */
+  
+  
+  #person {
+      opacity: 0;
+      transform: translateX(-100%);
+      /* Começa fora da tela à direita */
+      transition: opacity 1s ease, transform 0.5s ease;
+  }
+  
+  #person.visible {
+      opacity: 1;
+      transform: translateX(0);
+      /* Fica na posição original */
+  }
+  
+  #preloader {
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(270deg, #FF4F4F, #A6142F, #F20530, #FF6B6B);
+      background-size: 400% 400%;
+      animation: gradient-animation 1s ease-out infinite alternate;
+  }
+  
+  @keyframes gradient-animation {
+      0% {
+          background-position: 0% 50%;
+      }
+  
+      50% {
+          background-position: 100% 50%;
+      }
+  
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+  
+  #img-dev {
+      animation: img-dev 1s alternate infinite;
+  
+  }
+  
+  @keyframes img-dev {
+      0% {
+          opacity: 0.1;
+      }
+  
+      50% {
+          opacity: 0.5;
+      }
+  
+      100% {
+          opacity: 1;
+      }
+  }
+  
+  #imageModal img {
+      max-width: 90%;
+      max-height: 90%;
+  }
+  
+  .active {
+      color: #EC4747;
+  }
+  
+  
+  
+  .box-img [data] {
+      width: 0;
+      height: 0;
+      object-fit: cover;
+  }
+  
+  .box-img [src] {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* transition: 2s; */
+  }
+  
+  .box-icons [src] {
+      width: 70%;
+      height: 70%;
+      object-fit: cover;
+      /* transition: 2s; */
+  }
+  
+  .box-icons-services{
+      background:red ;
+  }
+
+
+/* animacao  level*/
+.animated-1 {
+    width: 0%;
+    height: 5px;
+    background-color: #F20530;
+    animation: animated-1 4s alternate infinite;
+    position: absolute;
+    left: 0;
 }
 
-/* Estilo para o scroll personalizado */
-::-webkit-scrollbar {
-    width: 12px;
-    /* Largura da barra de rolagem */
+.animated-2 {
+    width: 0%;
+    height: 5px;
+    background-color: #F20530;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    animation: animated-1 4s alternate infinite;
+    position: absolute;
+    right: 0;
 }
 
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    /* Cor do fundo da barra de rolagem */
-}
-
-::-webkit-scrollbar-thumb {
-    background: red;
-    /* Cor da parte que pode ser arrastada */
-    border-radius: 10px;
-    /* Arredondar os cantos do thumb */
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: darkred;
-    /* Cor do thumb ao passar o mouse */
-}
-
-
-/* scrool  */
-
-.section {
-    opacity: 0;
-    /* Começa invisível */
-    transition: opacity 2s ease-in-out;
-    /* Transição suave */
-
-}
-
-.section.visible {
-    opacity: 1;
-    /* Visível quando a classe 'visible' é adicionada */
-}
-
-
-/* btn contacte me  */
-
-
-#btn-contacte {
-    animation: animationbtn 2s infinite alternate;
-}
-
-@keyframes animationbtn {
+@keyframes animated-1 {
     0% {
-        padding-inline: 10px;
+        width: 0%;
     }
 
     100% {
-        padding-inline: 20px;
+        width: 100%;
     }
 }
 
 
-/* bg-person  */
-
-
-#bg-person {
-    animation: animationperson 2s infinite alternate;
-}
-
-@keyframes animationperson {
+@keyframes animated-1 {
     0% {
-        margin-block: 0px;
+        width: 0%;
     }
 
     100% {
-        margin-block: 120px;
+        width: 100%;
     }
-}
-
-
-/* banner  */
-
-
-#person {
-    opacity: 0;
-    transform: translateX(-100%);
-    /* Começa fora da tela à direita */
-    transition: opacity 1s ease, transform 0.5s ease;
-}
-
-#person.visible {
-    opacity: 1;
-    transform: translateX(0);
-    /* Fica na posição original */
-}
-
-#preloader {
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(270deg, #FF4F4F, #A6142F, #F20530, #FF6B6B);
-    background-size: 400% 400%;
-    animation: gradient-animation 1s ease-out infinite alternate;
-}
-
-@keyframes gradient-animation {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-#img-dev {
-    animation: img-dev 1s alternate infinite;
-
-}
-
-@keyframes img-dev {
-    0% {
-        opacity: 0.1;
-    }
-
-    50% {
-        opacity: 0.5;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-#imageModal img {
-    max-width: 90%;
-    max-height: 90%;
-}
-
-.active {
-    color: #EC4747;
-}
-
-
-
-.box-img [data] {
-    width: 0;
-    height: 0;
-    object-fit: cover;
-}
-
-.box-img [src] {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* transition: 2s; */
-}
-
-.box-icons [src] {
-    width: 70%;
-    height: 70%;
-    object-fit: cover;
-    /* transition: 2s; */
-}
-
-.box-icons-services{
-    background:red ;
 }
