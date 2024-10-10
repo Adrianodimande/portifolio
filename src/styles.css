@@ -171,11 +171,13 @@ html{
   }
 
 
+
+
 /* animacao  level*/
 .animated-1 {
     width: 0%;
     height: 5px;
-    background-color: #F20530;
+    background-image:linear-gradient(90deg, #FF0000, #FF6F61, #D50000, #B71C1C, #FF8A80);
     animation: animated-1 4s alternate infinite;
     position: absolute;
     left: 0;
@@ -184,7 +186,7 @@ html{
 .animated-2 {
     width: 0%;
     height: 5px;
-    background-color: #F20530;
+    background-image:linear-gradient(90deg, #FF0000, #FF6F61, #D50000, #B71C1C, #FF8A80);
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     animation: animated-1 4s alternate infinite;
