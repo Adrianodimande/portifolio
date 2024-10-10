@@ -54,8 +54,15 @@
     </div>
 
     <!-- button scrool top  -->
-    <button id="btn-top" class="w-8 h-8 rounded-full m-5 fixed bottom-0 right-0 bg-red-500 z-[600]"><i
-            class="bi-arrow-up text-white"></i></button>
+    <nav class="fixed bottom-0 right-0 flex flex-col z-[600]">
+
+        
+        <button>
+            <i id="controller_theme" class="bi-brightness-high-fill text-orange-500 text-2xl "></i>
+        </button>
+        <button id="btn-top" class="w-8 h-8 rounded-full m-5  bg-red-500"><i
+                class="bi-arrow-up text-white"></i></button>
+    </nav>
     <!-- into section -->
     <div id="home" class="w-screen h-screen relative overflow-hidden bg-[#1616169c]">
         <!-- Background Video -->
@@ -99,16 +106,19 @@
                     <li>
                         <a href="#contact" class="nav-link hover:text-[#EC4747] focus:text-lime-500">Contacto</a>
                     </li>
+                    <li>
+                        <div class="gtranslate_wrapper text-red-500"></div>
+                    </li>
+
+
                 </ul>
 
-                <button>
-                    <i id="controller_theme" class="bi-lightbulb-fill"></i>
-                </button>
+
 
                 <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
-                    <div class="w-6 h-0.5 bg-black"></div>
-                    <div class="w-6 h-0.5 bg-black"></div>
-                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-red-600"></div>
+                    <div class="w-6 h-0.5 bg-red-600"></div>
+                    <div class="w-6 h-0.5 bg-red-600"></div>
                 </div>
 
                 <ul id="menu"
@@ -131,6 +141,10 @@
                     <li>
                         <a id="hLink" href="#contact">Contacto</a>
                     </li>
+                    <li>
+                        <div class="gtranslate_wrapper text-white"></div>
+                    </li>
+
                 </ul>
             </div>
         </nav>
@@ -493,9 +507,10 @@
 
                     <!-- card  -->
                     <div
-                        class="h-[16em] md:w-[18em] rounded-lg  text-white font-nunito  flex justify-center items-left flex-col gap-[0.75em] backdrop-blur-[12px] bg-[url('/img/projects/estudiosa.jpg')] bg-cover bg-center hover:scale-105 transition ease-in-out">
+                        class="relative h-[16em] md:w-[18em] rounded-lg  text-white font-nunito  flex justify-center items-left flex-col gap-[0.75em]  hover:scale-105 transition ease-in-out">
+                        <img class="w-full h-full object-cover" data="img/projects/car.jpg" alt="">
                         <div
-                            class=" bg-gradient-to-br from-[#f205317e] to-[rgba(49,20,88,0.68)] w-full h-full rounded-lg flex flex-col justify-around px-4">
+                            class="absolute top-0  bg-gradient-to-br from-[#f205317e] to-[rgba(49,20,88,0.68)] w-full h-full rounded-lg flex flex-col justify-around px-4">
                             <div class="flex flex-col gap-5">
                                 <h1 class="text-[2em] font-medium ">Aluguer</h1>
                                 <p class="text-[0.85em]">
@@ -513,9 +528,10 @@
 
                     <!-- card  -->
                     <div
-                        class="h-[16em] md:w-[18em] rounded-lg  text-white font-nunito  flex justify-center items-left flex-col gap-[0.75em] backdrop-blur-[12px] bg-[url('/img/projects/estudiosa.jpg')] bg-cover bg-center hover:scale-105 transition ease-in-out">
+                        class="relative h-[16em] md:w-[18em] rounded-lg  text-white font-nunito  flex justify-center items-left flex-col gap-[0.75em]  hover:scale-105 transition ease-in-out">
+                        <img class="w-full h-full object-cover" data="img/projects/estudiosa.jpg" alt="">
                         <div
-                            class=" bg-gradient-to-br from-[#f205317e] to-[rgba(49,20,88,0.68)] w-full h-full rounded-lg flex flex-col justify-around px-4">
+                            class="absolute top-0  bg-gradient-to-br from-[#f205317e] to-[rgba(49,20,88,0.68)] w-full h-full rounded-lg flex flex-col justify-around px-4">
                             <div class="flex flex-col gap-5">
                                 <h1 class="text-[2em] font-medium ">Estudiosa</h1>
                                 <p class="text-[0.85em]">
@@ -525,16 +541,17 @@
                             </div>
                             <a id="btn-contacte"
                                 class="bg-[#F22248] text-white text-xl rounded-full font-semibold w-fit px-3 py-2"
-                                href="https://adrianodimande.github.io/estudiosa/" target="_blank">Visualizar</a>
+                                href="https://adrianodimande.github.io/aluguer/" target="_blank">Visualizar</a>
                         </div>
                     </div>
 
 
                     <!-- card  -->
                     <div
-                        class="h-[16em] md:w-[18em] rounded-lg  text-white font-nunito  flex justify-center items-left flex-col gap-[0.75em] backdrop-blur-[12px] bg-[url('/img/projects/estudiosa.jpg')] bg-cover bg-center hover:scale-105 transition ease-in-out">
+                        class="relative h-[16em] md:w-[18em] rounded-lg  text-white font-nunito  flex justify-center items-left flex-col gap-[0.75em]  hover:scale-105 transition ease-in-out">
+                        <img class="w-full h-full object-cover" data="img/projects/fitness.jpg" alt="">
                         <div
-                            class=" bg-gradient-to-br from-[#f205317e] to-[rgba(49,20,88,0.68)] w-full h-full rounded-lg flex flex-col justify-around px-4">
+                            class="absolute top-0  bg-gradient-to-br from-[#f205317e] to-[rgba(49,20,88,0.68)] w-full h-full rounded-lg flex flex-col justify-around px-4">
                             <div class="flex flex-col gap-5">
                                 <h1 class="text-[2em] font-medium ">Fitness</h1>
                                 <p class="text-[0.85em]">
@@ -544,7 +561,7 @@
                             </div>
                             <a id="btn-contacte"
                                 class="bg-[#F22248] text-white text-xl rounded-full font-semibold w-fit px-3 py-2"
-                                href="https://adrianodimande.github.io/fitness/" target="_blank">Visualizar</a>
+                                href="https://adrianodimande.github.io/aluguer/" target="_blank">Visualizar</a>
                         </div>
                     </div>
 
@@ -552,19 +569,20 @@
 
                     <!-- card  -->
                     <div
-                        class="h-[16em] md:w-[18em] rounded-lg  text-white font-nunito  flex justify-center items-left flex-col gap-[0.75em] backdrop-blur-[12px] bg-[url('/img/projects/pixology.jpg')] bg-cover bg-center hover:scale-105 transition ease-in-out">
+                        class="relative h-[16em] md:w-[18em] rounded-lg  text-white font-nunito  flex justify-center items-left flex-col gap-[0.75em]  hover:scale-105 transition ease-in-out">
+                        <img class="w-full h-full object-cover" data="img/projects/fitness.jpg" alt="">
                         <div
-                            class=" bg-gradient-to-br from-[#f205317e] to-[rgba(49,20,88,0.68)] w-full h-full rounded-lg flex flex-col justify-around px-4">
+                            class="absolute top-0  bg-gradient-to-br from-[#f205317e] to-[rgba(49,20,88,0.68)] w-full h-full rounded-lg flex flex-col justify-around px-4">
                             <div class="flex flex-col gap-5">
                                 <h1 class="text-[2em] font-medium ">Pixology</h1>
                                 <p class="text-[0.85em]">
-                                    criação de produtos digitais, com um design moderno que destaca a variedade de
+                                    Criação de produtos digitais, com um design moderno que destaca a variedade de
                                     soluções digitais e serviços oferecidos aos usuários.
                                 </p>
                             </div>
                             <a id="btn-contacte"
                                 class="bg-[#F22248] text-white text-xl rounded-full font-semibold w-fit px-3 py-2"
-                                href="https://adrianodimande.github.io/pixology/" target="_blank">Visualizar</a>
+                                href="https://adrianodimande.github.io/aluguer/" target="_blank">Visualizar</a>
                         </div>
                     </div>
 
@@ -1076,32 +1094,30 @@
             <div class="flex flex-col md:flex-row gap-10">
                 <div class="flex flex-col md:flex-row w-full gap-10">
                     <!-- Formulário -->
-                    <form action="https://formsubmit.co/adrianovelemo76@gmail.com" method="post" class="w-full flex flex-col gap-5 h-full justify-between">
-                        <input
-                            name="name"
+                    <form action="https://formsubmit.co/adrianovelemo76@gmail.com" method="post"
+                        class="w-full flex flex-col gap-5 h-full justify-between">
+                        <input name="name"
                             class="p-4 w-full border border-[#A6142F] rounded-md dark:bg-slate-700 dark:border-[#F20530] dark:text-white focus:outline-none focus:ring-2 focus:ring-[#A6142F]"
                             type="text" placeholder="Seu Nome" required />
-                    
-                        <input
-                            name="email"
+
+                        <input name="email"
                             class="p-4 w-full border border-[#A6142F] rounded-md dark:bg-slate-700 dark:border-[#F20530] dark:text-white focus:outline-none focus:ring-2 focus:ring-[#A6142F]"
                             type="email" placeholder="Seu Email" required />
-                    
-                        <textarea
-                            name="message"
+
+                        <textarea name="message"
                             class="p-4 w-full border border-[#A6142F] rounded-md dark:bg-slate-700 dark:border-[#F20530] dark:text-white focus:outline-none focus:ring-2 focus:ring-[#A6142F]"
                             cols="30" rows="7" placeholder="Conte-me sobre sua ideia..." required></textarea>
-                    
+
                         <button type="submit"
                             class="w-full bg-[#F22248] text-white font-medium px-4 py-2 rounded-md hover:bg-[#A6142F] transition duration-300">
                             Enviar
                         </button>
-                    
+
                         <input type="hidden" name="_subject" value="Novo envio!">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="text" name="_honey" style="display:none">
                     </form>
-                    
+
 
                     <div class="lg:w-[40%] flex flex-col gap-5">
 
@@ -1212,19 +1228,20 @@
                 Dimande.
                 Feito por mim, com carinho.</span>
             <ul class="flex gap-2">
-                <a href="tel:+258856716587"target='_blank'><i class="text-white hover:text-[#F22248] bi bi-telephone-fill"></i></a>
+                <a href="tel:+258856716587" target='_blank'><i
+                        class="text-white hover:text-[#F22248] bi bi-telephone-fill"></i></a>
 
-                <a href="mailto:adrianovelemo76@gmail.com"target='_blank'><i
+                <a href="mailto:adrianovelemo76@gmail.com" target='_blank'><i
                         class="text-white hover:text-[#F22248] bi bi-envelope-arrow-up-fill"></i></a>
 
 
-                <a  href=" https://api.whatsapp.com/send/?phone=%2B258856716587&text&type=phone_number&app_absent=0"target='_blank'><i
-                        class="text-white hover:text-[#F22248] bi bi-whatsapp"target='_blank'></i></a>
+                <a href=" https://api.whatsapp.com/send/?phone=%2B258856716587&text&type=phone_number&app_absent=0"
+                    target='_blank'><i class="text-white hover:text-[#F22248] bi bi-whatsapp" target='_blank'></i></a>
                 <a href="https://www.facebook.com/adriano_luis_dimande
-                "target='_blank'><i class="text-white hover:text-[#F22248] bi bi-facebook"></i></a>
-                <a href="https://www.instagram.com/ald_adriano258/"target='_blank'><i
+                " target='_blank'><i class="text-white hover:text-[#F22248] bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/ald_adriano258/" target='_blank'><i
                         class="text-white hover:text-[#F22248] bi bi-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/adriano-luis-dimande-532744286/"target='_blank'><i
+                <a href="https://www.linkedin.com/in/adriano-luis-dimande-532744286/" target='_blank'><i
                         class="text-white hover:text-[#F22248] bi bi-linkedin"></i></a>
 
 
@@ -1238,14 +1255,18 @@
     <script src="./app.js"></script>
     <script src="./autotyping.js"></script>
 
+  
+    <script>window.gtranslateSettings = {"default_language":"pt","native_language_names":true,"languages":["pt","en"],"wrapper_selector":".gtranslate_wrapper"}</script>
+    <script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
+
 
     <script>
-        document.querySelector('form').onsubmit = function() {
+        document.querySelector('form').onsubmit = function () {
             alert('Sua mensagem foi enviada com sucesso!');
             return true; // Permite o envio do formulário
         };
     </script>
-    
+
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
