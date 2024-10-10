@@ -5,6 +5,10 @@ document.getElementById('contactForm').addEventListener('submit', async function
     const formData = new FormData(form);
     const responseMessage = document.getElementById('responseMessage');
 
+    // Exibe a mensagem de "Processando..."
+    responseMessage.innerHTML = '⏳ Processando...';
+    responseMessage.className = 'text-blue-600 font-semibold';
+
     try {
         const response = await fetch('https://formsubmit.co/adrianovelemo76@gmail.com', {
             method: 'POST',
