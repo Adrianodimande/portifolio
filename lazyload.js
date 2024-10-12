@@ -9,9 +9,9 @@ const lazyLoading=()=>{
     })
 }
 
-// window.onload=()=>{
-//     lazyLoading()
-// }
+window.onload=()=>{
+    lazyLoading()
+}
 
 window.onscroll=()=>{
     lazyLoading()
