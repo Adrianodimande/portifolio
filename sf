@@ -1,52 +1,22 @@
-   <!-- card -->
-   <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-slate-700"
-   onclick="openModal(this)">
-   <img class="object-cover w-full h-full rounded-lg"
-       data="./img/graphic/5868616109387791765 (1).jpg" />
-</div>
-<!-- card -->
-<div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer"
-   onclick="openModal(this)">
-   <img class="object-cover w-full h-full rounded-lg"
-       data="./img/graphic/5868616109387791766.jpg" />
-</div>
-<!-- card -->
-<div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer"
-   onclick="openModal(this)">
-   <img class="object-cover w-full h-full rounded-lg"
-       data="./img/graphic/5868616109387791767 (1).jpg" />
-</div>
-<!-- card -->
-<div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer"
-   onclick="openModal(this)">
-   <img class="object-cover w-full h-full rounded-lg"
-       data="./img/graphic/5868616109387791768 (1).jpg" />
-</div>
-<!-- card -->
-<div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer"
-   onclick="openModal(this)">
-   <img class="object-cover w-full h-full rounded-lg"
-       data="./img/graphic/5868616109387791769.jpg" />
-</div>
-<!-- card -->
-<div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer"
-   onclick="openModal(this)">
-   <img class="object-cover w-full h-full rounded-lg"
-       data="./img/graphic/5868616109387791770.jpg" />
-</div>
-<!-- card -->
-<div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer"
-   onclick="openModal(this)">
-   <img class="object-cover w-full h-full rounded-lg"
-       data="./img/graphic/5868616109387791772 (1).jpg" />
-</div>
-<!-- card -->
-<div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer"
-   onclick="openModal(this)">
-   <img class="object-cover w-full h-full rounded-lg" data="./img/graphic/Verao_01.png" />
-</div>
-
-
-
-
-min-w-[100px] min-h-[200px] md:w-5/12 lg:w-1/5 my-3 md:my-10 m-1
+module.exports = {
+   darkMode:"class",
+   content: ['./*.html', './*.js', './src/**/*.{html,js}'],
+   theme: {
+     extend: {
+       spacing:{
+         "big":"48rem"
+       }
+     },
+     screens:{
+       sm:"480px",
+       md:"768px",
+       lg:"1024px",
+       xl:"1280px",
+     },
+     fontFamily:{
+       nunito:['Nunito', 'sans-serif']
+     }
+   },
+   plugins: [],
+ }
+ 
