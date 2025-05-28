@@ -1,212 +1,289 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sistema de RH e Gestão de Processos | MVP</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-  <style>
-    .hero-section {
-      height: 100vh;
-      min-height: 600px;
-      width: 100%;
-      position: relative;
-      overflow: hidden;
-    }
-    .hero-video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: 0;
-    }
-    .video-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.3);
-      z-index: 1;
-    }
-    .hero-content {
-      position: relative;
-      z-index: 2;
-    }
-    .content-section {
-      max-width: 1200px;
-    }
-    .feature-icon {
-      background: linear-gradient(135deg, #F22248 0%, #EC4747 100%);
-    }
-    .feature-card {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .feature-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    }
-  </style>
-</head>
-<body class="bg-gray-50 text-gray-800 dark:bg-slate-900 dark:text-white font-sans">
-
-  <!-- Hero Section with Fullscreen Video -->
-  <section class="hero-section">
-    <video class="hero-video" autoplay muted loop playsinline>
-      <source src="/img/projects/rh.mp4" type="video/mp4" />
-       <img src="/img/projects/backgroundProjectRh.png" alt="Sistema de RH" class="fallback-image">
-    Seu navegador não suporta vídeos HTML5.
-    </video>
-    <div class="video-overlay"></div>
-    <div class="hero-content h-full flex items-center justify-center text-center px-4">
-      <div>
-        <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Sistema de RH e Gestão de Processos</h1>
-        <p class="text-xl text-white/80 max-w-3xl mx-auto">MVP com dois perfis de usuários e gestão integrada de funcionários, processos e departamentos</p>
-        <div class="mt-12">
-          <a href="#content" class="animate-bounce text-white text-2xl inline-block">
-            <i class="bi bi-chevron-down"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Content Section -->
-  <section id="content" class="py-16 px-4 sm:px-6 lg:px-8 mx-auto content-section">
-    <div class="grid md:grid-cols-2 gap-12">
-
-      <!-- Left Column - Description -->
-      <div class="space-y-8">
-        <div class="flex items-center gap-3">
-          <div class="w-12 h-12 rounded-full bg-[#F22248]/10 flex items-center justify-center">
-            <i class="bi bi-info-circle-fill text-[#F22248] text-xl"></i>
-          </div>
-          <h2 class="text-3xl font-bold">Descrição Geral</h2>
-        </div>
-        
-        <div class="space-y-4">
-          <p class="text-gray-600 dark:text-gray-300">
-            Este MVP é um sistema completo voltado para Recursos Humanos e Gestão de Processos, projetado para facilitar o controle e a organização das operações internas de uma empresa. Ele suporta dois tipos distintos de usuários, permitindo diferentes níveis de acesso e controle, o que facilita a administração e o uso conforme o perfil do colaborador.
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de RH e Gestão de Processos | MVP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .hero-section {
+        height: 100vh;
+        min-height: 600px;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+      }
+      .hero-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+      }
+      .video-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+      }
+      .hero-content {
+        position: relative;
+        z-index: 2;
+      }
+      .content-section {
+        max-width: 1200px;
+      }
+      .feature-icon {
+        background: linear-gradient(135deg, #f22248 0%, #ec4747 100%);
+      }
+      .feature-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .feature-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body
+    class="bg-gray-50 text-gray-800 dark:bg-slate-900 dark:text-white font-sans"
+  >
+    <!-- Hero Section with Fullscreen Video -->
+    <section class="hero-section">
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="../img/projects/rh.mp4" type="video/mp4" />
+        <img
+          src="/img/projects/backgroundProjectRh.png"
+          alt="Sistema de RH"
+          class="fallback-image"
+        />
+        Seu navegador não suporta vídeos HTML5.
+      </video>
+      <div class="video-overlay"></div>
+      <div
+        class="hero-content h-full flex items-center justify-center text-center px-4"
+      >
+        <div>
+          <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">
+            Sistema de RH e Gestão de Processos
+          </h1>
+          <p class="text-xl text-white/80 max-w-3xl mx-auto">
+            MVP com dois perfis de usuários e gestão integrada de funcionários,
+            processos e departamentos
           </p>
-          <p class="text-gray-600 dark:text-gray-300">
-            O sistema oferece funcionalidades essenciais para o gerenciamento eficiente de funcionários, processos internos, departamentos, além de análises e filtros avançados para otimizar a tomada de decisão. Sua arquitetura modular garante escalabilidade para futuras implementações.
-          </p>
-        </div>
-
-        <!-- Features -->
-        <div class="space-y-6">
-          <div class="flex items-center gap-3">
-            <div class="w-12 h-12 rounded-full bg-[#F22248]/10 flex items-center justify-center">
-              <i class="bi bi-list-check text-[#F22248] text-xl"></i>
-            </div>
-            <h3 class="text-2xl font-semibold">Funcionalidades</h3>
-          </div>
-          
-          <div class="grid sm:grid-cols-2 gap-4">
-            <div class="feature-card bg-white dark:bg-slate-800 p-6 rounded-xl shadow-md">
-              <div class="w-10 h-10 rounded-full bg-[#F22248]/10 flex items-center justify-center mb-4">
-                <i class="bi bi-people-fill text-[#F22248]"></i>
-              </div>
-              <h4 class="font-semibold mb-2">Gerenciamento de usuários</h4>
-              <p class="text-gray-600 dark:text-gray-400 text-sm">Perfis distintos (administradores e usuários padrão)</p>
-            </div>
-            
-            <div class="feature-card bg-white dark:bg-slate-800 p-6 rounded-xl shadow-md">
-              <div class="w-10 h-10 rounded-full bg-[#F22248]/10 flex items-center justify-center mb-4">
-                <i class="bi bi-person-badge text-[#F22248]"></i>
-              </div>
-              <h4 class="font-semibold mb-2">Cadastro de funcionários</h4>
-              <p class="text-gray-600 dark:text-gray-400 text-sm">Controle detalhado de colaboradores</p>
-            </div>
-            
-            <div class="feature-card bg-white dark:bg-slate-800 p-6 rounded-xl shadow-md">
-              <div class="w-10 h-10 rounded-full bg-[#F22248]/10 flex items-center justify-center mb-4">
-                <i class="bi bi-diagram-3 text-[#F22248]"></i>
-              </div>
-              <h4 class="font-semibold mb-2">Gestão de processos</h4>
-              <p class="text-gray-600 dark:text-gray-400 text-sm">Com análise de desempenho</p>
-            </div>
-            
-            <div class="feature-card bg-white dark:bg-slate-800 p-6 rounded-xl shadow-md">
-              <div class="w-10 h-10 rounded-full bg-[#F22248]/10 flex items-center justify-center mb-4">
-                <i class="bi bi-building text-[#F22248]"></i>
-              </div>
-              <h4 class="font-semibold mb-2">Organização de departamentos</h4>
-              <p class="text-gray-600 dark:text-gray-400 text-sm">Estrutura organizacional completa</p>
-            </div>
-            
-            <div class="feature-card bg-white dark:bg-slate-800 p-6 rounded-xl shadow-md">
-              <div class="w-10 h-10 rounded-full bg-[#F22248]/10 flex items-center justify-center mb-4">
-                <i class="bi bi-search text-[#F22248]"></i>
-              </div>
-              <h4 class="font-semibold mb-2">Filtros avançados</h4>
-              <p class="text-gray-600 dark:text-gray-400 text-sm">Buscas personalizadas</p>
-            </div>
-      
+          <div class="mt-12">
+            <a
+              href="#content"
+              class="animate-bounce text-white text-2xl inline-block"
+            >
+              <i class="bi bi-chevron-down"></i>
+            </a>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Right Column - Details -->
-      <div class="space-y-8">
-        <!-- Tech Stack -->
-        <div class="space-y-4">
+    <!-- Content Section -->
+    <section
+      id="content"
+      class="py-16 px-4 sm:px-6 lg:px-8 mx-auto content-section"
+    >
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Left Column - Description -->
+        <div class="space-y-8">
           <div class="flex items-center gap-3">
-            <div class="w-12 h-12 rounded-full bg-[#F22248]/10 flex items-center justify-center">
-              <i class="bi bi-code-square text-[#F22248] text-xl"></i>
+            <div
+              class="w-12 h-12 rounded-full bg-[#F22248]/10 flex items-center justify-center"
+            >
+              <i class="bi bi-info-circle-fill text-[#F22248] text-xl"></i>
             </div>
-            <h3 class="text-2xl font-semibold">Tecnologias Utilizadas</h3>
+            <h2 class="text-3xl font-bold">Descrição Geral</h2>
           </div>
-          
-          <div class="flex flex-wrap gap-3">
-            <span class="bg-gray-200 dark:bg-slate-700 px-4 py-2 rounded-lg flex items-center gap-2">
-              <i class="bi bi-wind text-cyan-400"></i>
-              <span>Tailwind CSS</span>
-            </span>
-            <span class="bg-gray-200 dark:bg-slate-700 px-4 py-2 rounded-lg flex items-center gap-2">
-              <i class="bi bi-filetype-jsx text-blue-500"></i>
-              <span>React</span>
-            </span>
-            <span class="bg-gray-200 dark:bg-slate-700 px-4 py-2 rounded-lg flex items-center gap-2">
-              <i class="bi bi-filetype-tsx text-blue-400"></i>
-              <span>Typescript</span>
-            </span>
-            <span class="bg-gray-200 dark:bg-slate-700 px-4 py-2 rounded-lg flex items-center gap-2">
-              <i class="bi bi-server text-red-500"></i>
-              <span>Laravel API</span>
-            </span>
-            <span class="bg-gray-200 dark:bg-slate-700 px-4 py-2 rounded-lg flex items-center gap-2">
-              <i class="bi bi-database text-orange-500"></i>
-              <span>MySQL</span>
-            </span>
+
+          <div class="space-y-4">
+            <p class="text-gray-600 dark:text-gray-300">
+              Este sistema MVP é voltado para Recursos Humanos e Gestão de
+              Processos, com o objetivo de apoiar a organização interna e
+              otimizar a análise de desempenho dentro das empresas. Ele foi
+              pensado para oferecer uma solução prática e eficiente, que
+              facilita a gestão dos processos e contribui para uma melhor tomada
+              de decisão.
+            </p>
+            <p class="text-gray-600 dark:text-gray-300">
+              Com dois tipos de usuários, o sistema permite diferentes níveis de
+              acesso, garantindo segurança e controle sobre as informações de
+              acordo com o perfil de cada usuário. Essa estrutura promove uma
+              gestão mais clara e organizada, favorecendo o crescimento e a
+              melhoria contínua da empresa..
+            </p>
+          </div>
+
+          <!-- Features -->
+          <div class="space-y-6">
+            <div class="flex items-center gap-3">
+              <div
+                class="w-12 h-12 rounded-full bg-[#F22248]/10 flex items-center justify-center"
+              >
+                <i class="bi bi-list-check text-[#F22248] text-xl"></i>
+              </div>
+              <h3 class="text-2xl font-semibold">Funcionalidades</h3>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div
+                class="feature-card bg-white dark:bg-slate-800 p-6 rounded-xl shadow-md"
+              >
+                <div
+                  class="w-10 h-10 rounded-full bg-[#F22248]/10 flex items-center justify-center mb-4"
+                >
+                  <i class="bi bi-people-fill text-[#F22248]"></i>
+                </div>
+                <h4 class="font-semibold mb-2">Gerenciamento de usuários</h4>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                  Perfis distintos (administradores e usuários padrão)
+                </p>
+              </div>
+
+              <div
+                class="feature-card bg-white dark:bg-slate-800 p-6 rounded-xl shadow-md"
+              >
+                <div
+                  class="w-10 h-10 rounded-full bg-[#F22248]/10 flex items-center justify-center mb-4"
+                >
+                  <i class="bi bi-person-badge text-[#F22248]"></i>
+                </div>
+                <h4 class="font-semibold mb-2">Cadastro de funcionários</h4>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                  Controle detalhado de colaboradores
+                </p>
+              </div>
+
+              <div
+                class="feature-card bg-white dark:bg-slate-800 p-6 rounded-xl shadow-md"
+              >
+                <div
+                  class="w-10 h-10 rounded-full bg-[#F22248]/10 flex items-center justify-center mb-4"
+                >
+                  <i class="bi bi-diagram-3 text-[#F22248]"></i>
+                </div>
+                <h4 class="font-semibold mb-2">Gestão de processos</h4>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                  Com análise de desempenho
+                </p>
+              </div>
+
+              <div
+                class="feature-card bg-white dark:bg-slate-800 p-6 rounded-xl shadow-md"
+              >
+                <div
+                  class="w-10 h-10 rounded-full bg-[#F22248]/10 flex items-center justify-center mb-4"
+                >
+                  <i class="bi bi-building text-[#F22248]"></i>
+                </div>
+                <h4 class="font-semibold mb-2">Organização de departamentos</h4>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                  Estrutura organizacional completa
+                </p>
+              </div>
+
+              <div
+                class="feature-card bg-white dark:bg-slate-800 p-6 rounded-xl shadow-md"
+              >
+                <div
+                  class="w-10 h-10 rounded-full bg-[#F22248]/10 flex items-center justify-center mb-4"
+                >
+                  <i class="bi bi-search text-[#F22248]"></i>
+                </div>
+                <h4 class="font-semibold mb-2">Filtros avançados</h4>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                  Buscas personalizadas
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
-        <!-- Additional Info -->
-        <div class="space-y-4">
-          <div class="flex items-center gap-3">
-            <div class="w-12 h-12 rounded-full bg-[#F22248]/10 flex items-center justify-center">
-              <i class="bi bi-stars text-[#F22248] text-xl"></i>
+        <!-- Right Column - Details -->
+        <div class="space-y-8">
+          <!-- Tech Stack -->
+          <div class="space-y-4">
+            <div class="flex items-center gap-3">
+              <div
+                class="w-12 h-12 rounded-full bg-[#F22248]/10 flex items-center justify-center"
+              >
+                <i class="bi bi-code-square text-[#F22248] text-xl"></i>
+              </div>
+              <h3 class="text-2xl font-semibold">Tecnologias Utilizadas</h3>
             </div>
-            <h3 class="text-2xl font-semibold">Destaques do Sistema</h3>
+
+            <div class="flex flex-wrap gap-3">
+              <span
+                class="bg-gray-200 dark:bg-slate-700 px-4 py-2 rounded-lg flex items-center gap-2"
+              >
+                <i class="bi bi-wind text-cyan-400"></i>
+                <span>Tailwind CSS</span>
+              </span>
+              <span
+                class="bg-gray-200 dark:bg-slate-700 px-4 py-2 rounded-lg flex items-center gap-2"
+              >
+                <i class="bi bi-filetype-jsx text-blue-500"></i>
+                <span>React</span>
+              </span>
+              <span
+                class="bg-gray-200 dark:bg-slate-700 px-4 py-2 rounded-lg flex items-center gap-2"
+              >
+                <i class="bi bi-filetype-tsx text-blue-400"></i>
+                <span>Typescript</span>
+              </span>
+              <span
+                class="bg-gray-200 dark:bg-slate-700 px-4 py-2 rounded-lg flex items-center gap-2"
+              >
+                <i class="bi bi-server text-red-500"></i>
+                <span>Laravel API</span>
+              </span>
+              <span
+                class="bg-gray-200 dark:bg-slate-700 px-4 py-2 rounded-lg flex items-center gap-2"
+              >
+                <i class="bi bi-database text-orange-500"></i>
+                <span>MySQL</span>
+              </span>
+            </div>
           </div>
-          
-          <ul class="list-disc pl-5 space-y-2 text-gray-600 dark:text-gray-300">
-            <li>Interface intuitiva e responsiva para todos os dispositivos</li>
-            <li>Relatórios dinâmicos e exportáveis em múltiplos formatos</li>
-            <li>Integração com sistemas de autenticação corporativa</li>
-            <li>Arquitetura modular para fácil expansão</li>
-            <li>Filtros avançados com busca inteligente</li>
-          </ul>
+
+          <!-- Additional Info -->
+          <div class="space-y-4">
+            <div class="flex items-center gap-3">
+              <div
+                class="w-12 h-12 rounded-full bg-[#F22248]/10 flex items-center justify-center"
+              >
+                <i class="bi bi-stars text-[#F22248] text-xl"></i>
+              </div>
+              <h3 class="text-2xl font-semibold">Destaques do Sistema</h3>
+            </div>
+
+            <ul
+              class="list-disc pl-5 space-y-2 text-gray-600 dark:text-gray-300"
+            >
+              <li>
+                Interface intuitiva e responsiva para todos os dispositivos
+              </li>
+              <li>Relatórios dinâmicos e exportáveis em múltiplos formatos</li>
+              <li>Integração com sistemas de autenticação corporativa</li>
+              <li>Arquitetura modular para fácil expansão</li>
+              <li>Filtros avançados com busca inteligente</li>
+            </ul>
+          </div>
         </div>
-
-
       </div>
-    </div>
-  </section>
-
-</body>
+    </section>
+  </body>
 </html>
