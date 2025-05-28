@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/Adrianodimande/portifolio#readme",
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.7"
+
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
