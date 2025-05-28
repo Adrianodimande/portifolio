@@ -1,5 +1,32 @@
 {
+  "name": "portifolio",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "app.js",
+  "description": "",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adrianodimande/portifolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Adrianodimande/portifolio/issues"
+  },
+  "homepage": "https://github.com/Adrianodimande/portifolio#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.7"
+  },
   "devDependencies": {
-    "tailwindcss": "^3.4.16"
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17",
+    "vite": "^6.3.5"
   }
 }
