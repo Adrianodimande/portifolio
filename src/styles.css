@@ -173,6 +173,25 @@ html{
 
 
 
+  .tab-btn {
+    color: #6b7280;
+  }
+  .tab-btn.active {
+    background: #EC4747;
+    color: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  .tab-content {
+    animation: fadeIn 0.5s ease;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+
+
+
 /* animacao  level*/
 .animated-1 {
     width: 0%;

@@ -55,9 +55,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-
-
-
   </head>
 
   <body
@@ -578,38 +575,58 @@
     <section class="animated-1"></section>
 
     <!-- works -->
-<!-- Seção de Projetos -->
-<section id="projects" class="py-16 bg-gray-50 dark:bg-slate-800">
-  <div class="container mx-auto px-4">
-    <h2 class="text-3xl font-bold text-center dark:text-white mb-12">Meus Projetos</h2>
-    
-    <!-- Tabs Navigation -->
-    <div class="flex justify-center mb-10">
-      <div class="inline-flex bg-white dark:bg-slate-700 rounded-lg shadow p-1">
-        <button 
-          data-tab="design" 
-          class="tab-btn active px-6 py-3 rounded-md font-medium flex items-center transition-all"
-        >
-          <i class="bi bi-palette-fill mr-2"></i>
-          Design Gráfico
-        </button>
-        <button 
-          data-tab="systems" 
-          class="tab-btn px-6 py-3 rounded-md font-medium flex items-center transition-all"
-        >
-          <i class="bi bi-code-slash mr-2"></i>
-          Sistemas
-        </button>
-      </div>
-    </div>
-    
-    <!-- Tab Contents -->
-    <div class="tab-contents">
-      <!-- Design Projects -->
-      <div id="design-tab" class="tab-content active grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <!-- Projeto 1 -->
-      <div
-                class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full  shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
+    <div id="works" class="section py-40 dark:bg-slate-900 bg-gray-100">
+      <div class="container mx-auto px-3 md:px-3">
+        <!-- top -->
+        <div class="flex flex-col gap-3 items-center">
+          <h1 class="text-[#F20530] font-bold uppercase">Portifolio</h1>
+          <h1 class="text-3xl dark:text-white">Trabalhos & Projectos</h1>
+          <p class="md:w-2/3 text-center text-gray-400 pb-4">
+            Descubra alguns dos meus projetos mais recentes, onde criatividade e
+            tecnologia se encontram. Cada trabalho é uma nova oportunidade de
+            transformar ideias em experiências visuais impactantes. Explore
+            abaixo!
+          </p>
+        </div>
+
+        <nav class="border-b border-gray-200">
+          <div
+            class="md:flex flex-wrap justify-center space-x-4"
+            role="tablist"
+          >
+          <button
+    id="nav-home-tab"
+    onclick="selectTab('nav-home')"
+    class="nav-link text-gray-600 font-semibold py-2 px-4 transition duration-300 ease-in-out hover:text-[#F20530] focus:outline-none rounded-lg"
+>
+    Designer Grafico
+</button>
+
+<button
+    id="nav-system-tab"
+    onclick="selectTab('nav-system')"
+    class="nav-link text-gray-600 font-semibold py-2 px-4 transition duration-300 ease-in-out hover:text-[#F20530] focus:outline-none rounded-lg"
+>
+    Sistemas
+</button>
+          </div>
+        </nav>
+
+        <div class="tab-content rounded-lg pt-20">
+          <!-- container 1 -->
+          <div
+            class="tab-pane hidden"
+            id="nav-home"
+            role="tabpanel"
+            aria-labelledby="nav-home-tab"
+            tabindex="0"
+
+
+            
+          >
+            <div class="p-5 sm:p-0 flex flex-wrap justify-center">
+              <div
+                class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
                 onclick="openModal(this)"
               >
                 <img
@@ -621,7 +638,7 @@
 
               <!-- card -->
               <div
-                class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full  shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
+                class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
                 onclick="openModal(this)"
               >
                 <img
@@ -632,7 +649,7 @@
 
               <!-- card -->
               <div
-                class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full  shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
+                class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
                 onclick="openModal(this)"
               >
                 <img
@@ -642,7 +659,7 @@
               </div>
               <!-- card -->
               <div
-                class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full  shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
+                class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
                 onclick="openModal(this)"
               >
                 <img
@@ -652,7 +669,7 @@
               </div>
               <!-- card -->
               <div
-                class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full  shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
+                class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
                 onclick="openModal(this)"
               >
                 <img
@@ -662,7 +679,7 @@
               </div>
               <!-- card -->
               <div
-                class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full  shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
+                class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
                 onclick="openModal(this)"
               >
                 <img
@@ -672,7 +689,7 @@
               </div>
               <!-- card -->
               <div
-                class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full  shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
+                class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
                 onclick="openModal(this)"
               >
                 <img
@@ -682,7 +699,7 @@
               </div>
               <!-- card -->
               <div
-                class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full  shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
+                class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
                 onclick="openModal(this)"
               >
                 <img
@@ -691,9 +708,8 @@
                 />
               </div>
               <!-- card -->
-             
               <div
-                class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full  shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
+                class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
                 onclick="openModal(this)"
               >
                 <img
@@ -703,7 +719,17 @@
               </div>
               <!-- card -->
               <div
-                class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full  shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
+                class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
+                onclick="openModal(this)"
+              >
+                <img
+                  class="object-cover w-full h-full rounded-lg transition"
+                  data="./img/graphic/Modems.jpg"
+                />
+              </div>
+              <!-- card -->
+              <div
+                class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
                 onclick="openModal(this)"
               >
                 <img
@@ -714,7 +740,7 @@
 
               <!-- card -->
               <div
-                class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full  shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
+                class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
                 onclick="openModal(this)"
               >
                 <img
@@ -724,7 +750,7 @@
               </div>
 
               <div
-                class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full  shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
+                class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
                 onclick="openModal(this)"
               >
                 <img
@@ -736,7 +762,7 @@
 
               <!-- card -->
               <div
-                class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full  shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
+                class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
                 onclick="openModal(this)"
               >
                 <img
@@ -746,7 +772,7 @@
               </div>
               <!-- card -->
               <div
-                class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full  shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
+                class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
                 onclick="openModal(this)"
               >
                 <img
@@ -756,7 +782,7 @@
               </div>
               <!-- card -->
               <div
-                class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full  shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
+                class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
                 onclick="openModal(this)"
               >
                 <img
@@ -766,7 +792,7 @@
               </div>
               <!-- card -->
               <div
-                class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full  shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
+                class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
                 onclick="openModal(this)"
               >
                 <img
@@ -776,7 +802,7 @@
               </div>
               <!-- card -->
               <div
-                class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full  shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
+                class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
                 onclick="openModal(this)"
               >
                 <img
@@ -786,7 +812,7 @@
               </div>
               <!-- card -->
               <div
-                class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full  shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
+                class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
                 onclick="openModal(this)"
               >
                 <img
@@ -796,7 +822,7 @@
               </div>
               <!-- card -->
               <div
-                class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full  shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
+                class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
                 onclick="openModal(this)"
               >
                 <img
@@ -805,43 +831,78 @@
                 />
               </div>
 
-    
-        </div>
-        
-        <!-- Adicione mais projetos de design aqui -->
-      </div>
-      
-      <!-- Systems Projects -->
-      <div id="systems-tab" class="tab-content hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Projeto 1 -->
-         <a href="projectos/recursos-humanos.html">
-                <div class="bg-white dark:bg-slate-700 rounded-xl overflow-hidden shadow-lg transition-transform hover:scale-105">
-          <img src="img/projects/backgroundProjectRh.png" alt="Projeto de Sistema 1" class="w-full h-48 object-cover">
-          <div class="p-6">
-            <h3 class="text-xl font-bold dark:text-white">Sistema de Gestão</h3>
-            <p class="text-gray-600 dark:text-gray-300 mt-2">Plataforma web para gestão de pequenas empresas.</p>
-            <div class="mt-4 flex flex-wrap gap-2">
-              <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">HTML/CSS</span>
-              <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Laravel</span>
-              <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">React</span>
-                     <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Typescript</span>
+              <!-- card -->
+              <div
+                class="box-img min-w-[100px] min-h-[200px] dark:bg-gray-700 overflow-hidden w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110 cursor-pointer bg-gray-200"
+                onclick="openModal(this)"
+              >
+                <img
+                  class="object-cover w-full h-full rounded-lg transition"
+                  data="./img/graphic/Convite - JULIA & LUIS.png"
+                />
+              </div>
             </div>
           </div>
         </div>
-         </a>
-  
-        
-    
-        <!-- Adicione mais projetos de sistemas aqui -->
+
+        <!-- Modal -->
+        <div
+          id="imageModal"
+          class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden"
+          onclick="closeModal()"
+        >
+          <img
+            id="modalImage"
+            class="max-w-full max-h-full"
+            src=""
+            alt="Imagem em grande escala"
+          />
+        </div>
+
+        <!-- container-2  -->
+
+        <div
+          class="tab-pane hidden"
+          id="nav-system"
+          role="tabpanel"
+          aria-labelledby="nav-system-tab"
+          tabindex="1"
+        >
+          <div class="p-5 sm:p-0">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <!-- CARD 1 -->
+              <div
+                class="bg-white dark:bg-slate-800 rounded-2xl shadow-md overflow-hidden flex flex-col"
+              >
+                <img
+                  src="./img/projects/backgroundProjectRh.png"
+                  alt="RH"
+                  class="w-full h-48 object-cover"
+                />
+                <div class="p-5 flex flex-col justify-between h-full">
+                  <div>
+                    <h2 class="text-xl font-semibold mb-2 text-[#EC4747]">
+                      Sistema de RH e Gestão de Processos - MVP
+                    </h2>
+                    <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">
+                  Sistema MVP para gestão de funcionários, processos e departamentos com perfis distintos e filtros avançados, focado em eficiência e controle.
+                    </p>
+                  </div>
+                  <a
+                    href="src/layouts/projectos/recursos-humanos.html"
+                    class="mt-auto inline-block text-center bg-[#F22248] text-white px-4 py-2 rounded-md font-semibold hover:opacity-90 transition"
+                  >
+                    Ver detalhes
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- bottom -->
       </div>
     </div>
-  </div>
-</section>
-
-<!-- Estilos e Script para os Tabs -->
-
-
-  
 
     <section class="animated-1"></section>
     <!-- contact -->
@@ -994,8 +1055,6 @@
         </ul>
       </div>
     </div>
-
-
 
     <script src="./email.js" type="module"></script>
     <script src="./tabs.js" type="module"></script>
