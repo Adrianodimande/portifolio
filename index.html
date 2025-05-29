@@ -142,16 +142,10 @@
               <a
                 href="#works"
                 class="nav-link hover:text-[#EC4747] focus:text-lime-500"
-                >Trabalhos</a
+                >Projetos</a
               >
             </li>
-            <li>
-              <a
-                href="#plans"
-                class="nav-link hover:text-[#EC4747] focus:text-lime-500"
-                >Planos</a
-              >
-            </li>
+          
             <li>
               <a
                 href="#contact"
@@ -184,10 +178,7 @@
               <a id="hLink" href="#services">Serviços</a>
             </li>
             <li>
-              <a id="hLink" href="#works">Trabalhos</a>
-            </li>
-            <li>
-              <a id="hLink" href="#plans">Planos</a>
+              <a id="hLink" href="#works">Projetos</a>
             </li>
             <li>
               <a id="hLink" href="#contact">Contacto</a>
@@ -215,7 +206,7 @@
       <div
         class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-2 md:text-6xl lg:left-5 xl:left-48 xl:text-7xl font-bold"
       >
-        <span class="text-white">Freelancer</span>
+        <span class="text-white"></span>
         <p id="text" class="text-red-500"></p>
       </div>
       <!-- texts -->
@@ -225,11 +216,11 @@
         <h1 class="text-4xl font-bold text-[#EC4747]">Olá, eu sou o Adriano</h1>
         <p class="text-gray-400">
           Sou desenvolvedor focado em soluções web e mobile, com interesse em
-          oportunidades de estágio ou nível júnior. Gosto de aprender e me
+          oportunidades de Emprego. Gosto de aprender e me
           desafiar com novos projetos.
         </p>
         <p class="text-gray-400">
-          Também atuo com design gráfico, web design e mídias sociais, trazendo
+          Também atuo com design gráfico,Desenvolvedor Font-End,Back-End e mobile trazendo
           uma visão criativa e estratégica para o desenvolvimento de interfaces
           e comunicação digital.
         </p>
@@ -248,338 +239,458 @@
 
     <section class="animated-1"></section>
     <!-- about -->
-    <div
-      id="about"
-      class="section px-3 md:px-3 py-20 bg-gray-50 dark:bg-slate-900"
-    >
-      <div
-        class="container mx-auto flex flex-col-reverse lg:flex-row items-center gap-20"
-      >
-        <!-- Left Side -->
-        <div class="relative w-full lg:w-1/2 flex justify-center">
-          <div
-            class="w-full h-full md:w-[500] md:h-[500] rounded-full overflow-hidden shadow-lg transition-transform duration-300 transform hover:scale-105 bg-gray-200 dark:bg-gray-700 shadow-[#F20530] cursor-pointer"
-            onclick="openModal(this)"
-          >
-            <img
-              data="./img/portrait.png"
-              alt="Minha Foto"
-              class="object-cover h-full w-full transition-all"
-            />
-          </div>
-        </div>
-        <!-- Right Side -->
-        <div class="my-auto flex flex-col gap-5 lg:w-1/2">
-          <h1 class="text-[#F20530] font-bold">SOBRE MIM</h1>
-          <h2 class="text-3xl font-medium dark:text-white">
-            Minhas Experiências
-          </h2>
-          <p class="text-gray-600 dark:text-gray-300">
-            Ao longo de 4 anos de experiência, ganhei sabedoria e habilidades em
-            diversas áreas do design e desenvolvimento web. Trabalhei com uma
-            ampla gama de tecnologias e ferramentas que me permitiram criar
-            soluções eficazes e criativas. Aqui estão algumas das minhas
-            principais competências:
-          </p>
-          <div class="flex flex-col gap-4">
-            <!-- Skill Bars -->
-            <div class="flex flex-col">
-              <div class="skill">
-                <h2 class="text-gray-400 font-medium">HTML</h2>
-                <div class="w-full bg-gray-200 h-1.5 rounded-md">
-                  <div
-                    class="bg-[#F22248] h-1.5 rounded-md"
-                    style="width: 80%"
-                  ></div>
-                </div>
-              </div>
-              <div class="skill">
-                <h2 class="text-gray-400 font-medium">CSS</h2>
-                <div class="w-full bg-gray-200 h-1.5 rounded-md">
-                  <div
-                    class="bg-[#F22248] h-1.5 rounded-md"
-                    style="width: 80%"
-                  ></div>
-                </div>
-              </div>
-              <div class="skill">
-                <h2 class="text-gray-400 font-medium">Bootstrap</h2>
-                <div class="w-full bg-gray-200 h-1.5 rounded-md">
-                  <div
-                    class="bg-[#F22248] h-1.5 rounded-md"
-                    style="width: 90%"
-                  ></div>
-                </div>
-              </div>
+    <!-- ===== ABOUT SECTION ===== -->
+<section id="about" class="section px-4 md:px-6 py-24 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-slate-900 dark:to-slate-800">
+  <div class="container mx-auto flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20">
+    <!-- Left Side - Photo with modern effects -->
+    <div class="relative w-full lg:w-1/2 flex justify-center group">
+      <div class="w-full max-w-md h-auto aspect-square rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 group-hover:shadow-[0_20px_50px_rgba(242,_5,_48,_0.3)] bg-gray-200 dark:bg-gray-700 cursor-pointer relative">
+        <img
+          src="./img/portrait.png"
+          alt="Minha Foto"
+          class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
+          loading="lazy"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+      </div>
+    </div>
 
-              <div class="skill">
-                <h2 class="text-gray-400 font-medium">Tailwind</h2>
-                <div class="w-full bg-gray-200 h-1.5 rounded-md">
-                  <div
-                    class="bg-[#F22248] h-1.5 rounded-md"
-                    style="width: 90%"
-                  ></div>
-                </div>
-              </div>
-              <div class="skill">
-                <h2 class="text-gray-400 font-medium">UI/UX</h2>
-                <div class="w-full bg-gray-200 h-1.5 rounded-md">
-                  <div
-                    class="bg-[#F22248] h-1.5 rounded-md"
-                    style="width: 40%"
-                  ></div>
-                </div>
-              </div>
-              <div class="skill">
-                <h2 class="text-gray-400 font-medium">JavaScript</h2>
-                <div class="w-full bg-gray-200 h-1.5 rounded-md">
-                  <div
-                    class="bg-[#F22248] h-1.5 rounded-md"
-                    style="width: 50%"
-                  ></div>
-                </div>
-              </div>
-              <div class="skill">
-                <h2 class="text-gray-400 font-medium">Ajax</h2>
-                <div class="w-full bg-gray-200 h-1.5 rounded-md">
-                  <div
-                    class="bg-[#F22248] h-1.5 rounded-md"
-                    style="width: 33%"
-                  ></div>
-                </div>
-              </div>
-              <div class="skill">
-                <h2 class="text-gray-400 font-medium">PHP</h2>
-                <div class="w-full bg-gray-200 h-1.5 rounded-md">
-                  <div
-                    class="bg-[#F22248] h-1.5 rounded-md"
-                    style="width: 50%"
-                  ></div>
-                </div>
-              </div>
-              <div class="skill">
-                <h2 class="text-gray-400 font-medium">WordPress</h2>
-                <div class="w-full bg-gray-200 h-1.5 rounded-md">
-                  <div
-                    class="bg-[#F22248] h-1.5 rounded-md"
-                    style="width: 60%"
-                  ></div>
-                </div>
-              </div>
-              <div class="skill">
-                <h2 class="text-gray-400 font-medium">Flutter</h2>
-                <div class="w-full bg-gray-200 h-1.5 rounded-md">
-                  <div
-                    class="bg-[#F22248] h-1.5 rounded-md"
-                    style="width: 40%"
-                  ></div>
-                </div>
-              </div>
-              <div class="skill">
-                <h2 class="text-gray-400 font-medium">MySQL</h2>
-                <div class="w-full bg-gray-200 h-1.5 rounded-md">
-                  <div
-                    class="bg-[#F22248] h-1.5 rounded-md"
-                    style="width: 50%"
-                  ></div>
-                </div>
-              </div>
-              <div class="skill">
-                <h2 class="text-gray-400 font-medium">Adobe Photoshop</h2>
-                <div class="w-full bg-gray-200 h-1.5 rounded-md">
-                  <div
-                    class="bg-[#F22248] h-1.5 rounded-md"
-                    style="width: 70%"
-                  ></div>
-                </div>
-              </div>
-              <div class="skill">
-                <h2 class="text-gray-400 font-medium">CorelDraw</h2>
-                <div class="w-full bg-gray-200 h-1.5 rounded-md">
-                  <div
-                    class="bg-[#F22248] h-1.5 rounded-md"
-                    style="width: 50%"
-                  ></div>
-                </div>
-              </div>
-              <div class="skill">
-                <h2 class="text-gray-400 font-medium">Adobe Illustrator</h2>
-                <div class="w-full bg-gray-200 h-1.5 rounded-md">
-                  <div
-                    class="bg-[#F22248] h-1.5 rounded-md"
-                    style="width: 20%"
-                  ></div>
-                </div>
-              </div>
-              <div class="skill">
-                <h2 class="text-gray-400 font-medium">Figma</h2>
-                <div class="w-full bg-gray-200 h-1.5 rounded-md">
-                  <div
-                    class="bg-[#F22248] h-1.5 rounded-md"
-                    style="width: 50%"
-                  ></div>
-                </div>
-              </div>
-              <div class="skill">
-                <h2 class="text-gray-400 font-medium">Social Media</h2>
-                <div class="w-full bg-gray-200 h-1.5 rounded-md">
-                  <div
-                    class="bg-[#F22248] h-1.5 rounded-md"
-                    style="width: 40%"
-                  ></div>
-                </div>
-              </div>
+    <!-- Right Side - Content -->
+    <div class="my-auto flex flex-col gap-6 lg:w-1/2">
+      <div class="inline-flex items-center gap-3">
+        <span class="w-6 h-0.5 bg-[#F20530]"></span>
+        <h1 class="text-[#F20530] font-bold tracking-wider text-sm uppercase">SOBRE MIM</h1>
+      </div>
+      <h1 class="text-gray-600 dark:text-gray-300 text-lg leading-relaxed lg:hidden">Olá, eu sou o Adriano Luis Dimande
+
+Desenvolvedor Front-End,Back-End e mobile em busca de oportunidades de estágio ou emprego.
+Também atuo com design gráfico, web design e mídias sociais, unindo criatividade e estratégia para criar soluções digitais.</h1>
+      
+      <h2 class="text-4xl md:text-5xl font-bold dark:text-white leading-tight">
+        Minhas <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#F20530] to-[#F22248]">Experiências</span>
+      </h2>
+      
+      <p class="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
+        Com mais de 4 anos de experiência, desenvolvi habilidades sólidas em desenvolvimento front-end e back-end, criando soluções completas para web e mobile. Ao longo da minha trajetória, trabalhei com diversas tecnologias e ferramentas para construir aplicações eficientes, escaláveis e com foco na melhor experiência para o usuário.
+      </p>
+      
+      <div class="mt-4">
+        <h3 class="text-xl font-semibold dark:text-gray-200 mb-4">Minhas Competências:</h3>
+        
+        <!-- Modern Skill Grid - First 4 skills -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <!-- HTML -->
+          <div class="skill-item p-4 bg-white dark:bg-slate-800 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-medium text-gray-700 dark:text-gray-300">HTML</span>
+              <span class="text-sm text-[#F20530]">80%</span>
+            </div>
+            <div class="w-full bg-gray-200 dark:bg-slate-700 h-2 rounded-full">
+              <div class="bg-[#F20530] h-2 rounded-full" style="width: 80%"></div>
+            </div>
+          </div>
+          
+          <!-- CSS -->
+          <div class="skill-item p-4 bg-white dark:bg-slate-800 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-medium text-gray-700 dark:text-gray-300">CSS</span>
+              <span class="text-sm text-[#F20530]">80%</span>
+            </div>
+            <div class="w-full bg-gray-200 dark:bg-slate-700 h-2 rounded-full">
+              <div class="bg-[#F20530] h-2 rounded-full" style="width: 80%"></div>
+            </div>
+          </div>
+          
+          <!-- JavaScript -->
+          <div class="skill-item p-4 bg-white dark:bg-slate-800 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-medium text-gray-700 dark:text-gray-300">JavaScript</span>
+              <span class="text-sm text-[#F20530]">50%</span>
+            </div>
+            <div class="w-full bg-gray-200 dark:bg-slate-700 h-2 rounded-full">
+              <div class="bg-[#F20530] h-2 rounded-full" style="width: 50%"></div>
+            </div>
+          </div>
+          
+          <!-- React -->
+          <div class="skill-item p-4 bg-white dark:bg-slate-800 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-medium text-gray-700 dark:text-gray-300">React</span>
+              <span class="text-sm text-[#F20530]">40%</span>
+            </div>
+            <div class="w-full bg-gray-200 dark:bg-slate-700 h-2 rounded-full">
+              <div class="bg-[#F20530] h-2 rounded-full" style="width: 40%"></div>
             </div>
           </div>
         </div>
+        
+        <!-- View More Button -->
+        <button id="showSkillsBtn" class="mt-6 px-6 py-3 bg-transparent border border-[#F20530] text-[#F20530] dark:text-white rounded-lg hover:bg-[#F20530] hover:text-white transition-colors duration-300 font-medium">
+          Ver Todas as Habilidades
+        </button>
       </div>
     </div>
-    <section class="animated-2"></section>
-    <!-- services -->
-    <div id="services" class="section dark:bg-slate-800 py-20">
-      <div class="container mx-auto px-3 md:px-3 text-center">
-        <h1 class="text-[#F20530] font-bold uppercase">Serviços</h1>
-        <h1 class="text-3xl dark:text-white">O que eu ofereço?</h1>
-        <p class="md:w-2/3 mx-auto text-gray-400 mb-10">
-          Minha abordagem ao design e desenvolvimento digital é criar soluções
-          visuais que fortalecem a identidade da sua marca, com foco em
-          usabilidade, desempenho e estética.
-        </p>
-        <div class="py-5 flex flex-wrap gap-6">
-          <!-- card 1 -->
-          <div
-            class="w-full md:w-52 shadow md:shadow-xl rounded-lg p-5 flex flex-col items-center gap-3"
-          >
-            <nav
-              class="w-14 h-14 m-auto rounded-full box-icons-services flex justify-center items-center transition-all box-icons"
-            >
-              <img
-                class="w-8 h-8"
-                data="./img/icons/designer web.png"
-                alt="Web Design Icon"
-              />
-            </nav>
-            <h2 class="font-medium text-lg dark:text-white">Web Design</h2>
-            <p class="text-gray-400">
-              Criação de websites modernos e intuitivos, focados na experiência
-              do usuário.
-            </p>
-          </div>
+  </div>
 
-          <!-- card 2 -->
-          <div
-            class="w-full md:w-52 shadow md:shadow-xl rounded-lg p-5 flex flex-col items-center gap-3"
-          >
-            <nav
-              class="w-14 h-14 m-auto rounded-full box-icons-services flex justify-center items-center transition-all box-icons"
-            >
-              <img
-                class="w-8 h-8"
-                data="./img/icons/internet.png"
-                alt="Social Media Icon"
-              />
-            </nav>
-            <h2 class="font-medium text-lg dark:text-white">Social Media</h2>
-            <p class="text-gray-400">
-              Criação de conteúdos e estratégias eficazes para engajamento nas
-              redes sociais.
-            </p>
+  <!-- Skills Modal -->
+  <div id="skillsModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/50 bg-opacity-50">
+    <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+      <div class="p-6">
+        <div class="flex justify-between items-center mb-4">
+          <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Todas as Minhas Habilidades</h3>
+          <button id="closeModalBtn" class="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <!-- HTML -->
+          <div class="skill-item p-4 bg-gray-50 dark:bg-slate-700 rounded-lg">
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-medium text-gray-700 dark:text-gray-300">HTML</span>
+              <span class="text-sm text-[#F20530]">80%</span>
+            </div>
+            <div class="w-full bg-gray-200 dark:bg-slate-600 h-2 rounded-full">
+              <div class="bg-[#F20530] h-2 rounded-full" style="width: 80%"></div>
+            </div>
           </div>
-
-          <!-- card 3 -->
-          <div
-            class="w-full md:w-52 shadow md:shadow-xl rounded-lg p-5 flex flex-col items-center gap-3"
-          >
-            <nav
-              class="w-14 h-14 m-auto rounded-full box-icons-services flex justify-center items-center transition-all box-icons"
-            >
-              <img
-                class="w-8 h-8"
-                data="./img/icons/design-graphic.png"
-                alt="Graphic Design Icon"
-              />
-            </nav>
-            <h2 class="font-medium text-lg dark:text-white">Design Gráfico</h2>
-            <p class="text-gray-400">
-              Desenvolvimento de peças visuais que comunicam com clareza e
-              criatividade.
-            </p>
+          
+          <!-- CSS -->
+          <div class="skill-item p-4 bg-gray-50 dark:bg-slate-700 rounded-lg">
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-medium text-gray-700 dark:text-gray-300">CSS</span>
+              <span class="text-sm text-[#F20530]">80%</span>
+            </div>
+            <div class="w-full bg-gray-200 dark:bg-slate-600 h-2 rounded-full">
+              <div class="bg-[#F20530] h-2 rounded-full" style="width: 80%"></div>
+            </div>
           </div>
-
-          <!-- card 4 -->
-          <div
-            class="w-full md:w-52 shadow md:shadow-xl rounded-lg p-5 flex flex-col items-center gap-3"
-          >
-            <nav
-              class="w-14 h-14 m-auto rounded-full box-icons-services flex justify-center items-center transition-all box-icons"
-            >
-              <img
-                class="w-8 h-8"
-                data="./img/icons/desenvolvimento-web.png"
-                alt="Web Development Icon"
-              />
-            </nav>
-            <h2 class="font-medium text-lg dark:text-white">
-              Desenvolvimento Web
-            </h2>
-            <p class="text-gray-400">
-              Desenvolvimento de sites e sistemas personalizados com foco em
-              performance.
-            </p>
+          
+          <!-- Bootstrap -->
+          <div class="skill-item p-4 bg-gray-50 dark:bg-slate-700 rounded-lg">
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-medium text-gray-700 dark:text-gray-300">Bootstrap</span>
+              <span class="text-sm text-[#F20530]">90%</span>
+            </div>
+            <div class="w-full bg-gray-200 dark:bg-slate-600 h-2 rounded-full">
+              <div class="bg-[#F20530] h-2 rounded-full" style="width: 90%"></div>
+            </div>
           </div>
-
-          <!-- card 5 -->
-          <div
-            class="w-full md:w-52 shadow md:shadow-xl rounded-lg p-5 flex flex-col items-center gap-3"
-          >
-            <nav
-              class="w-14 h-14 m-auto rounded-full box-icons-services flex justify-center items-center transition-all box-icons"
-            >
-              <img
-                class="w-8 h-8"
-                data="./img/icons/mobile-development.png"
-                alt="Mobile Development Icon"
-              />
-            </nav>
-            <h2 class="font-medium text-lg dark:text-white">
-              Desenvolvimento Mobile
-            </h2>
-            <p class="text-gray-400">
-              Aplicativos modernos e funcionais, com design responsivo e
-              experiência fluida.
-            </p>
+          
+          <!-- Tailwind -->
+          <div class="skill-item p-4 bg-gray-50 dark:bg-slate-700 rounded-lg">
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-medium text-gray-700 dark:text-gray-300">Tailwind</span>
+              <span class="text-sm text-[#F20530]">90%</span>
+            </div>
+            <div class="w-full bg-gray-200 dark:bg-slate-600 h-2 rounded-full">
+              <div class="bg-[#F20530] h-2 rounded-full" style="width: 90%"></div>
+            </div>
           </div>
-
-          <!-- card 6 - Novo Serviço -->
-          <div
-            class="w-full md:w-52 shadow md:shadow-xl rounded-lg p-5 flex flex-col items-center gap-3"
-          >
-            <nav
-              class="w-14 h-14 m-auto rounded-full box-icons-services flex justify-center items-center transition-all box-icons"
-            >
-              <img
-                class="w-8 h-8"
-                data="./img/icons/support.png"
-                alt="Manutenção Icon"
-              />
-            </nav>
-            <h2 class="font-medium text-lg dark:text-white">
-              Manutenção e Suporte
-            </h2>
-            <p class="text-gray-400">
-              Atualizações, correções e suporte contínuo para manter seu site
-              sempre no ar.
-            </p>
+          
+          <!-- UI/UX -->
+          <div class="skill-item p-4 bg-gray-50 dark:bg-slate-700 rounded-lg">
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-medium text-gray-700 dark:text-gray-300">UI/UX</span>
+              <span class="text-sm text-[#F20530]">30%</span>
+            </div>
+            <div class="w-full bg-gray-200 dark:bg-slate-600 h-2 rounded-full">
+              <div class="bg-[#F20530] h-2 rounded-full" style="width: 30%"></div>
+            </div>
           </div>
+          
+          <!-- JavaScript -->
+          <div class="skill-item p-4 bg-gray-50 dark:bg-slate-700 rounded-lg">
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-medium text-gray-700 dark:text-gray-300">JavaScript</span>
+              <span class="text-sm text-[#F20530]">50%</span>
+            </div>
+            <div class="w-full bg-gray-200 dark:bg-slate-600 h-2 rounded-full">
+              <div class="bg-[#F20530] h-2 rounded-full" style="width: 50%"></div>
+            </div>
+          </div>
+          
+          <!-- TypeScript -->
+          <div class="skill-item p-4 bg-gray-50 dark:bg-slate-700 rounded-lg">
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-medium text-gray-700 dark:text-gray-300">TypeScript</span>
+              <span class="text-sm text-[#F20530]">50%</span>
+            </div>
+            <div class="w-full bg-gray-200 dark:bg-slate-600 h-2 rounded-full">
+              <div class="bg-[#F20530] h-2 rounded-full" style="width: 50%"></div>
+            </div>
+          </div>
+          
+          <!-- ReactJs -->
+          <div class="skill-item p-4 bg-gray-50 dark:bg-slate-700 rounded-lg">
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-medium text-gray-700 dark:text-gray-300">ReactJs</span>
+              <span class="text-sm text-[#F20530]">40%</span>
+            </div>
+            <div class="w-full bg-gray-200 dark:bg-slate-600 h-2 rounded-full">
+              <div class="bg-[#F20530] h-2 rounded-full" style="width: 40%"></div>
+            </div>
+          </div>
+          
+          <!-- Ajax -->
+          <div class="skill-item p-4 bg-gray-50 dark:bg-slate-700 rounded-lg">
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-medium text-gray-700 dark:text-gray-300">Ajax</span>
+              <span class="text-sm text-[#F20530]">70%</span>
+            </div>
+            <div class="w-full bg-gray-200 dark:bg-slate-600 h-2 rounded-full">
+              <div class="bg-[#F20530] h-2 rounded-full" style="width: 70%"></div>
+            </div>
+          </div>
+          
+          <!-- PHP -->
+          <div class="skill-item p-4 bg-gray-50 dark:bg-slate-700 rounded-lg">
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-medium text-gray-700 dark:text-gray-300">PHP</span>
+              <span class="text-sm text-[#F20530]">40%</span>
+            </div>
+            <div class="w-full bg-gray-200 dark:bg-slate-600 h-2 rounded-full">
+              <div class="bg-[#F20530] h-2 rounded-full" style="width: 40%"></div>
+            </div>
+          </div>
+          
+          <!-- Laravel -->
+          <div class="skill-item p-4 bg-gray-50 dark:bg-slate-700 rounded-lg">
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-medium text-gray-700 dark:text-gray-300">Laravel</span>
+              <span class="text-sm text-[#F20530]">40%</span>
+            </div>
+            <div class="w-full bg-gray-200 dark:bg-slate-600 h-2 rounded-full">
+              <div class="bg-[#F20530] h-2 rounded-full" style="width: 40%"></div>
+            </div>
+          </div>
+          
+          <!-- WordPress -->
+          <div class="skill-item p-4 bg-gray-50 dark:bg-slate-700 rounded-lg">
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-medium text-gray-700 dark:text-gray-300">WordPress</span>
+              <span class="text-sm text-[#F20530]">60%</span>
+            </div>
+            <div class="w-full bg-gray-200 dark:bg-slate-600 h-2 rounded-full">
+              <div class="bg-[#F20530] h-2 rounded-full" style="width: 60%"></div>
+            </div>
+          </div>
+          
+          <!-- Flutter -->
+          <div class="skill-item p-4 bg-gray-50 dark:bg-slate-700 rounded-lg">
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-medium text-gray-700 dark:text-gray-300">Flutter</span>
+              <span class="text-sm text-[#F20530]">40%</span>
+            </div>
+            <div class="w-full bg-gray-200 dark:bg-slate-600 h-2 rounded-full">
+              <div class="bg-[#F20530] h-2 rounded-full" style="width: 40%"></div>
+            </div>
+          </div>
+          
+          <!-- MySQL -->
+          <div class="skill-item p-4 bg-gray-50 dark:bg-slate-700 rounded-lg">
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-medium text-gray-700 dark:text-gray-300">MySQL</span>
+              <span class="text-sm text-[#F20530]">50%</span>
+            </div>
+            <div class="w-full bg-gray-200 dark:bg-slate-600 h-2 rounded-full">
+              <div class="bg-[#F20530] h-2 rounded-full" style="width: 50%"></div>
+            </div>
+          </div>
+          
+          <!-- Adobe Photoshop -->
+          <div class="skill-item p-4 bg-gray-50 dark:bg-slate-700 rounded-lg">
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-medium text-gray-700 dark:text-gray-300">Adobe Photoshop</span>
+              <span class="text-sm text-[#F20530]">70%</span>
+            </div>
+            <div class="w-full bg-gray-200 dark:bg-slate-600 h-2 rounded-full">
+              <div class="bg-[#F20530] h-2 rounded-full" style="width: 70%"></div>
+            </div>
+          </div>
+          
+          <!-- CorelDraw -->
+          <div class="skill-item p-4 bg-gray-50 dark:bg-slate-700 rounded-lg">
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-medium text-gray-700 dark:text-gray-300">CorelDraw</span>
+              <span class="text-sm text-[#F20530]">50%</span>
+            </div>
+            <div class="w-full bg-gray-200 dark:bg-slate-600 h-2 rounded-full">
+              <div class="bg-[#F20530] h-2 rounded-full" style="width: 50%"></div>
+            </div>
+          </div>
+          
+          <!-- Adobe Illustrator -->
+          <div class="skill-item p-4 bg-gray-50 dark:bg-slate-700 rounded-lg">
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-medium text-gray-700 dark:text-gray-300">Adobe Illustrator</span>
+              <span class="text-sm text-[#F20530]">20%</span>
+            </div>
+            <div class="w-full bg-gray-200 dark:bg-slate-600 h-2 rounded-full">
+              <div class="bg-[#F20530] h-2 rounded-full" style="width: 20%"></div>
+            </div>
+          </div>
+          
+          <!-- Figma -->
+          <div class="skill-item p-4 bg-gray-50 dark:bg-slate-700 rounded-lg">
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-medium text-gray-700 dark:text-gray-300">Figma</span>
+              <span class="text-sm text-[#F20530]">50%</span>
+            </div>
+            <div class="w-full bg-gray-200 dark:bg-slate-600 h-2 rounded-full">
+              <div class="bg-[#F20530] h-2 rounded-full" style="width: 50%"></div>
+            </div>
+          </div>
+          
+          <!-- Social Media -->
+          <div class="skill-item p-4 bg-gray-50 dark:bg-slate-700 rounded-lg">
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-medium text-gray-700 dark:text-gray-300">Social Media</span>
+              <span class="text-sm text-[#F20530]">40%</span>
+            </div>
+            <div class="w-full bg-gray-200 dark:bg-slate-600 h-2 rounded-full">
+              <div class="bg-[#F20530] h-2 rounded-full" style="width: 40%"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mt-6 flex justify-end">
+          <button id="closeModalBtn2" class="px-4 py-2 bg-[#F20530] text-white rounded-lg hover:bg-[#F22248] transition-colors duration-300">
+            Fechar
+          </button>
         </div>
       </div>
     </div>
+  </div>
+
+  <script>
+    // Modal functionality
+    const modal = document.getElementById('skillsModal');
+    const showBtn = document.getElementById('showSkillsBtn');
+    const closeBtns = document.querySelectorAll('#closeModalBtn, #closeModalBtn2');
+
+    // Show modal
+    showBtn.addEventListener('click', () => {
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    });
+
+    // Close modal
+    closeBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        modal.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+      });
+    });
+
+    // Close when clicking outside modal content
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+      }
+    });
+
+    // Close with Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+        modal.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+      }
+    });
+  </script>
+</section>
+    <section class="animated-2"></section>
+    <!-- services -->
+    <div id="services" class="section dark:bg-slate-800 py-20">
+  <div class="container mx-auto px-4 md:px-6 text-center">
+    <div class="max-w-2xl mx-auto">
+      <span class="text-[#F20530] font-bold uppercase tracking-wider text-sm">O QUE POSSO FAZER POR VOCÊ</span>
+      <h2 class="text-3xl md:text-4xl font-bold dark:text-white mt-2 mb-4">Soluções que Impulsionam Seu Negócio</h2>
+      <p class="text-gray-500 dark:text-gray-400 leading-relaxed">
+        Ofereço mais do que desenvolvimento - crio experiências digitais que resolvem problemas reais e geram resultados.
+      </p>
+    </div>
+
+    <div class="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Serviço 1 -->
+      <div class="bg-white dark:bg-slate-700 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 group hover:border-[#F20530] border border-transparent">
+        <div class="w-16 h-16 bg-red-50 dark:bg-slate-600 rounded-full flex items-center justify-center mx-auto mb-5 group-hover:bg-[#F20530] transition-colors">
+          <i class="bi bi-window-fullscreen text-2xl text-[#F20530] dark:text-white group-hover:text-white"></i>
+        </div>
+        <h3 class="text-xl font-semibold dark:text-white mb-3">Sites de Alto Impacto</h3>
+        <p class="text-gray-500 dark:text-gray-300">
+          Desenvolvimento de websites que não apenas impressionam visualmente, mas convertem visitantes em clientes, com navegação intuitiva e performance excepcional.
+        </p>
+      </div>
+
+      <!-- Serviço 2 -->
+      <div class="bg-white dark:bg-slate-700 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 group hover:border-[#F20530] border border-transparent">
+        <div class="w-16 h-16 bg-red-50 dark:bg-slate-600 rounded-full flex items-center justify-center mx-auto mb-5 group-hover:bg-[#F20530] transition-colors">
+          <i class="bi bi-phone text-2xl text-[#F20530] dark:text-white group-hover:text-white"></i>
+        </div>
+        <h3 class="text-xl font-semibold dark:text-white mb-3">Aplicativos Sob Medida</h3>
+        <p class="text-gray-500 dark:text-gray-300">
+          Criação de aplicativos móveis que oferecem experiência fluida em qualquer dispositivo, perfeitos para engajar seus clientes onde eles estiverem.
+        </p>
+      </div>
+
+      <!-- Serviço 3 -->
+      <div class="bg-white dark:bg-slate-700 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 group hover:border-[#F20530] border border-transparent">
+        <div class="w-16 h-16 bg-red-50 dark:bg-slate-600 rounded-full flex items-center justify-center mx-auto mb-5 group-hover:bg-[#F20530] transition-colors">
+          <i class="bi bi-gear text-2xl text-[#F20530] dark:text-white group-hover:text-white"></i>
+        </div>
+        <h3 class="text-xl font-semibold dark:text-white mb-3">Sistemas Personalizados</h3>
+        <p class="text-gray-500 dark:text-gray-300">
+          Soluções de software feitas exclusivamente para sua operação, automatizando processos e organizando seus dados de maneira inteligente.
+        </p>
+      </div>
+
+      <!-- Serviço 4 -->
+      <div class="bg-white dark:bg-slate-700 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 group hover:border-[#F20530] border border-transparent">
+        <div class="w-16 h-16 bg-red-50 dark:bg-slate-600 rounded-full flex items-center justify-center mx-auto mb-5 group-hover:bg-[#F20530] transition-colors">
+          <i class="bi bi-lightning-charge text-2xl text-[#F20530] dark:text-white group-hover:text-white"></i>
+        </div>
+        <h3 class="text-xl font-semibold dark:text-white mb-3">Otimização de Performance</h3>
+        <p class="text-gray-500 dark:text-gray-300">
+          Transformo sites lentos em plataformas rápidas e eficientes, melhorando a experiência do usuário e posicionamento no Google.
+        </p>
+      </div>
+
+      <!-- Serviço 5 -->
+      <div class="bg-white dark:bg-slate-700 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 group hover:border-[#F20530] border border-transparent">
+        <div class="w-16 h-16 bg-red-50 dark:bg-slate-600 rounded-full flex items-center justify-center mx-auto mb-5 group-hover:bg-[#F20530] transition-colors">
+          <i class="bi bi-palette2 text-2xl text-[#F20530] dark:text-white group-hover:text-white"></i>
+        </div>
+        <h3 class="text-xl font-semibold dark:text-white mb-3">Design que Converte</h3>
+        <p class="text-gray-500 dark:text-gray-300">
+          Interfaces cuidadosamente planejadas que guiam o usuário de forma natural até a ação que você deseja, seja comprar, assinar ou entrar em contato.
+        </p>
+      </div>
+
+      <!-- Serviço 6 -->
+      <div class="bg-white dark:bg-slate-700 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 group hover:border-[#F20530] border border-transparent">
+        <div class="w-16 h-16 bg-red-50 dark:bg-slate-600 rounded-full flex items-center justify-center mx-auto mb-5 group-hover:bg-[#F20530] transition-colors">
+          <i class="bi bi-shield-check text-2xl text-[#F20530] dark:text-white group-hover:text-white"></i>
+        </div>
+        <h3 class="text-xl font-semibold dark:text-white mb-3">Manutenção Profissional</h3>
+        <p class="text-gray-500 dark:text-gray-300">
+          Serviço contínuo para manter seu site ou aplicativo sempre atualizado, seguro e funcionando perfeitamente.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
     <section class="animated-1"></section>
 
     <!-- works -->
 <!-- Seção de Projetos -->
-<section id="projects" class="py-16 bg-gray-50 dark:bg-slate-800">
+<section id="projects" class="py-16 bg-gray-50 dark:bg-slate-900">
   <div class="container mx-auto px-4">
     <h2 class="text-3xl font-bold text-center dark:text-white mb-12">Meus Projetos</h2>
     
@@ -840,7 +951,7 @@
     <section class="animated-1"></section>
 
 <!-- Formação Acadêmica -->
-<section id="education" class="section py-20 bg-white dark:bg-slate-900">
+<section id="education" class="section py-20 bg-white dark:bg-slate-800">
   <div class="container mx-auto px-4">
     <div class="text-center mb-16">
       <h1 class="text-[#F20530] font-bold uppercase">Formação</h1>
@@ -860,7 +971,7 @@
           <div>
             <h3 class="text-xl font-bold dark:text-white">Universidade São Tomás de Moçambique</h3>
             <p class="text-gray-600 dark:text-gray-300 font-medium">Desenvolvimento de Software</p>
-            <p class="text-gray-500 dark:text-gray-400 text-sm mt-2">2022 - Atualmente</p>
+            <p class="text-gray-500 dark:text-gray-400 text-sm mt-2">Atualmente</p>
             <p class="text-gray-600 dark:text-gray-300 mt-3">
               Graduação em andamento com foco em engenharia de software, algoritmos e estruturas de dados.
             </p>
@@ -877,7 +988,7 @@
           <div>
             <h3 class="text-xl font-bold dark:text-white">Mechanical Tecnologia</h3>
             <p class="text-gray-600 dark:text-gray-300 font-medium">Programação Web & Backend</p>
-            <p class="text-gray-500 dark:text-gray-400 text-sm mt-2">2022 - 6 meses cada curso</p>
+            <p class="text-gray-500 dark:text-gray-400 text-sm mt-2">2023 - 6 meses cada curso</p>
             <p class="text-gray-600 dark:text-gray-300 mt-3">
               Cursos intensivos com foco em tecnologias modernas para desenvolvimento frontend e backend.
             </p>
