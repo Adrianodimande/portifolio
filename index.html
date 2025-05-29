@@ -565,42 +565,7 @@ Também atuo com design gráfico, web design e mídias sociais, unindo criativid
     </div>
   </div>
 
-  <script>
-    // Modal functionality
-    const modal = document.getElementById('skillsModal');
-    const showBtn = document.getElementById('showSkillsBtn');
-    const closeBtns = document.querySelectorAll('#closeModalBtn, #closeModalBtn2');
-
-    // Show modal
-    showBtn.addEventListener('click', () => {
-      modal.classList.remove('hidden');
-      document.body.style.overflow = 'hidden';
-    });
-
-    // Close modal
-    closeBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        modal.classList.add('hidden');
-        document.body.style.overflow = 'auto';
-      });
-    });
-
-    // Close when clicking outside modal content
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) {
-        modal.classList.add('hidden');
-        document.body.style.overflow = 'auto';
-      }
-    });
-
-    // Close with Escape key
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
-        modal.classList.add('hidden');
-        document.body.style.overflow = 'auto';
-      }
-    });
-  </script>
+ 
 </section>
     <section class="animated-2"></section>
     <!-- services -->
@@ -1163,6 +1128,44 @@ Também atuo com design gráfico, web design e mídias sociais, unindo criativid
     <script src="./app.js" type="module"></script>
     <script src="./autotyping.js" type="module"></script>
 
+    <!-- show Skills -->
+
+ <script>
+    // Modal functionality
+    const modal = document.getElementById('skillsModal');
+    const showBtn = document.getElementById('showSkillsBtn');
+    const closeBtns = document.querySelectorAll('#closeModalBtn, #closeModalBtn2');
+
+    // Show modal
+    showBtn.addEventListener('click', () => {
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    });
+
+    // Close modal
+    closeBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        modal.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+      });
+    });
+
+    // Close when clicking outside modal content
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+      }
+    });
+
+    // Close with Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+        modal.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+      }
+    });
+  </script>
     <script>
       window.gtranslateSettings = {
         default_language: "pt",
